@@ -6,6 +6,8 @@ import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const mutations=[
+ ['ignore-ledger-checkpoint','learning.mjs','checkCheckpoint(events,ledger);return ledger;','return ledger;'],
+ ['ignore-consumed-memory-revocation','workflow.mjs','if(s.memoryBindings.some(m=>current.get(m.id)!==m.revision))','if(false)'],
  ['allow-double-output-transform','media-preflight.mjs',"if(b.input?.outputTransformBaked===true&&b.operations?.applySameOutputTransform===true)",'if(false)'],
  ['allow-double-print-management','media-preflight.mjs',"if(b.print?.conversionOwner==='both')",'if(false)'],
  ['swap-red-blue-weights','contrast.mjs','c[0]*0.2126+c[1]*0.7152+c[2]*0.0722','c[0]*0.0722+c[1]*0.7152+c[2]*0.2126'],
@@ -20,12 +22,13 @@ try{
  cpSync(join(root,'scripts'),join(dir,'scripts'),{recursive:true});mkdirSync(join(dir,'tests'));cpSync(join(root,'tests/independent-oracles.test.mjs'),join(dir,'tests/independent-oracles.test.mjs'));
  cpSync(join(root,'tests/collector-oracles.test.mjs'),join(dir,'tests/collector-oracles.test.mjs'));
  cpSync(join(root,'tests/media-preflight.test.mjs'),join(dir,'tests/media-preflight.test.mjs'));
- const run=()=>spawnSync(process.execPath,['--test','--test-reporter=tap','tests/independent-oracles.test.mjs','tests/collector-oracles.test.mjs','tests/media-preflight.test.mjs'],{cwd:dir,encoding:'utf8',timeout:30000});
+ cpSync(join(root,'tests/learning-safety.test.mjs'),join(dir,'tests/learning-safety.test.mjs'));cpSync(join(root,'color'),join(dir,'color'),{recursive:true});
+ const run=()=>spawnSync(process.execPath,['--test','--test-reporter=tap','tests/independent-oracles.test.mjs','tests/collector-oracles.test.mjs','tests/media-preflight.test.mjs','tests/learning-safety.test.mjs'],{cwd:dir,encoding:'utf8',timeout:30000});
  const baseline=run();if(baseline.status!==0)throw Error('Unmodified oracle suite failed: '+baseline.stdout+baseline.stderr);
  const results=[];
  for(const [name,file,from,to] of mutations){const path=join(dir,'scripts',file),original=readFileSync(path,'utf8');if(original.split(from).length!==2)throw Error('Mutation target drift: '+name);writeFileSync(path,original.replace(from,to));
   const syntax=spawnSync(process.execPath,['--check',path],{encoding:'utf8'});if(syntax.status!==0)throw Error('Invalid mutation syntax: '+name);
   const r=run();const detected=r.status===1&&r.stdout.includes('ERR_ASSERTION')&&!/ERR_MODULE_NOT_FOUND|SyntaxError/.test(r.stdout+r.stderr);results.push({name,detected});writeFileSync(path,original);if(!detected)throw Error('Mutant survived or failed for unrelated reason: '+name);
  }
- console.log(JSON.stringify({status:'pass',baseline:'16 oracle/contract tests passed',mutations:results,scope:'Eight deliberately seeded faults only, not a comprehensive mutation score or proof against circular tests.'},null,2));
+ console.log(JSON.stringify({status:'pass',baseline:'25 oracle/contract/safety tests passed',mutations:results,scope:'Ten deliberately seeded faults only, not a comprehensive mutation score or proof against circular tests.'},null,2));
 }finally{rmSync(dir,{recursive:true,force:true})}

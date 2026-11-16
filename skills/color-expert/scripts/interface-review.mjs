@@ -1,7 +1,8 @@
 import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
-import {resolve,join} from 'node:path';
+import {resolve,join,dirname} from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
+import {privateStateRoot} from './private-state.mjs';
 import {contrast} from './contrast.mjs';
 const digest=s=>createHash('sha256').update(s).digest('hex');
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
@@ -26,6 +27,7 @@ export function validateContract(c){
  return c;
 }
 export function prepare(htmlPath,contractPath,out){
+ privateStateRoot(dirname(resolve(out)));
  const c=validateContract(read(contractPath));const html=readFileSync(htmlPath,'utf8');
  demand(!existsSync(out),'Use a new output directory for every revision');
  // Host must assess self-containment; this conservative screen catches ordinary external resources.

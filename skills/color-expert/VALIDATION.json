@@ -1,6 +1,6 @@
 {
   "status": "targeted-checks-not-exhaustive-clearance",
-  "testsPassed": 103,
+  "testsPassed": 112,
   "testsFailed": 0,
   "install": "npm ci --ignore-scripts --offline passed; no external dependencies",
   "smokeChecks": [
@@ -30,10 +30,12 @@
   ],
   "packaging": "Private manifest-allowlisted archive; no runs, captures, metadata or personal feedback. Fresh extracted-copy offline install and check performed.",
   "mutationCheck": {
-    "baselineTests": 16,
-    "seededFaultsDetected": 8,
+    "baselineTests": 25,
+    "seededFaultsDetected": 10,
     "comprehensive": false
   },
   "installation": "Actual Skills CLI1.9.0 local copy install into fresh Codex project passed; GitHub remote installation not tested at release preparation.",
-  "mediaRefinement": "Three routes and eight declaration-contract tests added; no real photo/video/print/material execution or efficacy evaluation."
+  "mediaRefinement": "Three routes and eight declaration-contract tests added; no real photo/video/print/material execution or efficacy evaluation.",
+  "persistenceRemediation": "Local separate working copy; explicit external private state, checkpoint inconsistency rejection and current consumed-feedback checks. Whole-store rollback and erasure remain unsupported.",
+  "persistenceIntegration": "Actual local Skills CLI install/reinstall preserved external synthetic state byte-for-byte and kept revoked feedback excluded; not tested against remote update service."
 }

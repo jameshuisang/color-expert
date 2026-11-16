@@ -5,8 +5,10 @@ This optional adapter inspects your self-contained HTML rather than replacing it
 ## Start
 
 ```sh
-node scripts/interface-review.mjs prepare examples/interface-study.html examples/interface-contract.json runs/interface-01
+node scripts/interface-review.mjs prepare examples/interface-study.html examples/interface-contract.json "$HOME/color-expert-private-state/interface-01"
 ```
+
+Create the external private state directory first as shown in `docs/private-state-usage.md`. The output parent must be an existing owner-only external directory.
 
 Exit 3 means prepared but **unverified**, not failed setup. Every revision needs a new output directory. Keep user content and runs private. Do not execute untrusted HTML merely because it was supplied as evidence. Review authority and tool permissions still apply. External scripts/styles/assets, embedded documents and network applications are outside this adapter; its resource screen is not a security sandbox. Do not strip dependencies to force an app through it.
 
@@ -23,7 +25,7 @@ Before review, the host must examine the self-contained source for dynamic resou
 Top-level evidence contains the prepared manifest's binding, htmlHash, contractHash and url, plus exactly one record per case. Each record contains collector fields, actual session and inspectionMethod, visualInspected, stateEvidence, and a fresh independent review: separateAgent/contextSeparated true, non-lead agentId, observedReading recorded before author rationale, concrete observations, scores and reasons for fit/harmony/hierarchy/function (integer 0..4; each >=3 to pass). A manually measured nontext observation must retain id/selector and include visible, supported, foreground/background opaque hex values and nonColorCue. Never invent these fields when tools or a reviewer are absent.
 
 ```sh
-node scripts/interface-review.mjs assess runs/interface-01 runs/interface-01/evidence.json
+node scripts/interface-review.mjs assess "$HOME/color-expert-private-state/interface-01" "$HOME/color-expert-private-state/interface-01"/evidence.json
 ```
 
 Exit 0: scoped pass. Exit 1: detected failure. Exit 2: invalid or mismatched evidence. Exit 3: unverified. Contrast thresholds derive from observation kind, not reviewer-provided numbers; large-text eligibility is checked. Missing coverage, duplicates and changed artifacts are rejected. A failed measurement or review cannot be offset by an average score. Preserve failed results and change the artifact in a new revision.

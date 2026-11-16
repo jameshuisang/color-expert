@@ -27,7 +27,7 @@ Examples are synthetic. Contrast covers opaque sRGB pairs, not whole-interface a
 ## Applied review loop
 
 ```sh
-node scripts/workflow.mjs start examples/workflow-brief.json
+node scripts/workflow.mjs start examples/workflow-brief.json --state-dir /absolute/private-state
 ```
 
 Follow `docs/runtime.md` to submit a candidate, prepare a live preview and obtain independent review. The controller records evidence; it does not call models or spawn reviewers. Its fixed UI/poster preview is not a production app. No personal feedback is bundled; optional learning starts empty.
@@ -44,13 +44,15 @@ MIT applies to original work, not a grant over third-party material. Read `RELEA
 
 ## Actual-interface review
 
+First create the external private state directory following `docs/private-state-usage.md`.
+
 Keep your self-contained HTML composition and interaction instead of adapting it to the fixed palette study. Declare viewport/state observations, prepare an immutable revision, collect browser evidence, and use a fresh independent rendered reviewer. See `docs/actual-interface-review.md`.
 
 ```sh
-node scripts/interface-review.mjs prepare examples/interface-study.html examples/interface-contract.json runs/interface-01
+node scripts/interface-review.mjs prepare examples/interface-study.html examples/interface-contract.json "$HOME/color-expert-private-state/interface-01"
 # Copy generated evidence.template.json to evidence.json; fill only verified observations.
 # Host performs actual interactions and independent pixel review.
-node scripts/interface-review.mjs assess runs/interface-01 runs/interface-01/evidence.json
+node scripts/interface-review.mjs assess "$HOME/color-expert-private-state/interface-01" "$HOME/color-expert-private-state/interface-01"/evidence.json
 ```
 
 Prepared means unverified (exit 3). This adapter has no fixed palette/style rule. It conservatively supports opaque sRGB text measurement; complex paint and nontext require explicit qualified review/measurement. It is not an arbitrary framework-app launcher or an automatic browser service.
@@ -72,3 +74,11 @@ See `docs/quickstart.md` for a complete supported workflow and `docs/actual-inte
 ## Across media
 
 Use `cross-media-appearance`, `print-proofing` and `photo-video-grading` for surfaces, lighting, surround, print and grading. The skill separates diagnosis from execution. `docs/media-workflows.md` explains the declaration preflight and what still requires actual media tools and review.
+
+## Private feedback storage
+
+Static workflow commands now require `--state-dir` pointing to an existing external owner-only directory. No automatic legacy migration or erasure occurs. Checkpoints catch detected tail damage, not whole-store rollback. Revoked/revised consumed feedback blocks old runs from resuming. Read `docs/learning.md` before enabling persistence.
+
+For complete optional-persistence setup, feedback commands and retention/rollback limits, read `docs/private-state-usage.md`.
+
+Start with [Using Color Expert](docs/quickstart.md).

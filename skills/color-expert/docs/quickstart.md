@@ -1,4 +1,4 @@
-# Start using the color expert
+# Using Color Expert
 
 ## Requirements
 
@@ -20,9 +20,11 @@ Run from this folder. Open the whole folder in the editor, explicitly tell the a
 
 ## Actual interface, complete sequence
 
+First create a new owner-only external directory as described in `docs/private-state-usage.md`; these examples use $HOME/color-expert-private-state.
+
 ```sh
-npm run interface -- prepare examples/interface-study.html examples/interface-contract.json runs/my-first-review
-cp runs/my-first-review/evidence.template.json runs/my-first-review/evidence.json
+npm run interface -- prepare examples/interface-study.html examples/interface-contract.json "$HOME/color-expert-private-state/my-first-review"
+cp "$HOME/color-expert-private-state/my-first-review"/evidence.template.json "$HOME/color-expert-private-state/my-first-review"/evidence.json
 ```
 
 Prepare returns exit 3, meaning pending/unverified. The directory exists and is ready; do not chain the copy with `&&`. Reusing an existing run directory is rejected to protect prior evidence. Use a new name for every revision.
@@ -30,7 +32,7 @@ Prepare returns exit 3, meaning pending/unverified. The directory exists and is 
 Have the host read the generated review request and open the frozen page. Set each declared viewport and operate the stated controls. Collect measurements using the browser helper, record actual state assertions, and delegate fresh independent pixel review. The template includes all required fields but none of its observation or review defaults count as evidence. Follow `docs/actual-interface-review.md`; browser-specific commands differ by host.
 
 ```sh
-npm run interface -- assess runs/my-first-review runs/my-first-review/evidence.json
+npm run interface -- assess "$HOME/color-expert-private-state/my-first-review" "$HOME/color-expert-private-state/my-first-review"/evidence.json
 ```
 
 - Exit 0: all declared checks passed within scope.
@@ -48,4 +50,10 @@ A pass is not full accessibility or superior taste. The supplied contract covers
 - Unsupported alpha/gradient/nontext: do not override supported flags; use qualified measurement or leave unverified.
 - Cannot load local HTML: use an authorized host that supports the artifact; this package does not automatically create a server or upload your work.
 
-Keep runs, feedback and user files private. This is a local private candidate, not permission to republish its source-derived material.
+Keep runs, feedback and user files private. This skill is published under its stated license with separate third-party terms; private run data is not part of the public package.
+
+For complete optional-persistence setup, feedback commands and retention/rollback limits, read `docs/private-state-usage.md`.
+
+## What it can and can’t verify
+
+It can run supported numeric checks, identify declared workflow contradictions, bind review evidence to files, and stop when required evidence is missing. It cannot guarantee aesthetic quality, authenticate a reviewer merely from a submitted JSON flag, prove physical display/print accuracy from a screenshot, or prevent a complete private-store rollback without an independent authority. Photo/video/material guidance still needs appropriate host tools and real output review.

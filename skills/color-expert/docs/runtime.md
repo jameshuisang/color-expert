@@ -5,14 +5,14 @@ The user addresses one color expert. Its lead chooses relevant knowledge and del
 ## Execute
 
 ```sh
-node scripts/workflow.mjs start brief.json
-node scripts/workflow.mjs submit RUN candidate.json
-node scripts/workflow.mjs prepare-visual RUN
+node scripts/workflow.mjs start brief.json --state-dir /absolute/private-state
+node scripts/workflow.mjs submit RUN candidate.json --state-dir /absolute/private-state
+node scripts/workflow.mjs prepare-visual RUN --state-dir /absolute/private-state
 # Lead delegates independent-review-request-N.json to a fresh reviewer.
 # Reviewer opens the exact live HTML URL in a visual browser, sees the rendered
 # colors, reads the binding meta, and returns scored critique. No PNG required.
-node scripts/workflow.mjs review RUN review.json
-node scripts/workflow.mjs status RUN
+node scripts/workflow.mjs review RUN review.json --state-dir /absolute/private-state
+node scripts/workflow.mjs status RUN --state-dir /absolute/private-state
 ```
 
 `start` snapshots selectively retrieved sources and scoped memories. `submit` validates six opaque sRGB tokens, calculates five text ratios, renders SVG/HTML and stops at awaiting-visual. The HTML omits author rationale to reduce reviewer priming. `prepare-visual` creates a live-document handoff and independent review packet, then awaits review. It does not create or require PNG files. Existing historical PNG demonstrations remain untouched.
@@ -57,3 +57,7 @@ New runs require `brief.task` (see `examples/workflow-brief.json` and `docs/doma
 ## Actual-interface adapter
 
 `docs/actual-interface-review.md` documents an optional self-contained HTML path that retains the actual composition and declared interactive states. It is separate from the static six-token controller above. It does not restore the original research dashboard or claim arbitrary-app support. Its pass/fail/unverified result applies only to frozen case coverage and host-supplied evidence.
+
+## Local remediation: explicit private state
+
+Use an external owner-only directory with `--state-dir` on every static workflow command. Installed assets remain read-only; API `start(stateRoot, brief)` retrieves bundled knowledge independently. This intentionally breaks commands that silently stored private data beside the installed skill. No legacy ledger is moved or discarded. A detected checkpoint problem or revised/revoked consumed memory stops resume, requiring inspection or a fresh run/context. See `docs/learning.md` for rollback and privacy limitations.

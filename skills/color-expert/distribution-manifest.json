@@ -1,5 +1,5 @@
 {
-  "status": "self-contained-release-candidate",
+  "status": "local-persistence-remediation-not-published",
   "strategy": "all skill assets included; MIT original contributions with separate third-party notices",
   "files": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "f0b89e90d86007adce863336e15976e2984d33c31f7fc5045d9e8bb21aad7102"
+      "sha256": "f7633f69c768696b4f4d4194ae0a85f23f84c71acd48fc52e556cd8dc81b72a5"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -24,7 +24,7 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "71afd2c286d62e34f3157003e90dd8fb11cece3b68490c122b7c4aedf55be50e"
+      "sha256": "15518e7ed0aeeb06d1f43c66aa84423f2334fecda8f47bf7b6a7bd92f03a55b0"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -32,7 +32,7 @@
     },
     {
       "path": "VALIDATION.json",
-      "sha256": "600a7d7d07d6bbf7458cb533bce673ccf240c1c3009abfaa1913194a535620d9"
+      "sha256": "afe48564e7388186d24dff95a4e458038fbd2164dbc41bb79440ad874c0b97b2"
     },
     {
       "path": "color/convictions.md",
@@ -180,7 +180,7 @@
     },
     {
       "path": "docs/actual-interface-review.md",
-      "sha256": "b4e18cf8485e681b17ffe441f7b24b6059d04d7c83e89c1354fd26fd403f5a5b"
+      "sha256": "819c8280981639d6dc37249d22320bf02540b47ebb4e55d3ca3438040ab5c1e5"
     },
     {
       "path": "docs/actual-interface-verification.md",
@@ -192,11 +192,11 @@
     },
     {
       "path": "docs/install-verification.md",
-      "sha256": "d5d80f80d1ff19d9117597bd28baebd48de10388dc04759e7f424a30c720ef91"
+      "sha256": "d43090d1349dea3d705af2662ebb0591af27c5e2a66d7508554b1dc89a2814e4"
     },
     {
       "path": "docs/learning.md",
-      "sha256": "41e89a2ea842cf455c08dc0314874a287590b289e71c523a8a5a7955f8c386dc"
+      "sha256": "bb43779afc213205936e45dcc8d794ae15f67780429ebc33859c0a9e4dbcb45f"
     },
     {
       "path": "docs/licenses/apca-w3-0.1.9.md",
@@ -223,16 +223,20 @@
       "sha256": "6ec8cfb1e5fab0bc13d90f18aa83e8561f5129796f6ef80c5517cecdec23dc9a"
     },
     {
+      "path": "docs/private-state-usage.md",
+      "sha256": "e3ec3e91c2b3c8561d706c86ce4da1b27db727ddf629481ec2b62d2ea4187fcd"
+    },
+    {
       "path": "docs/private-v1-readiness.md",
-      "sha256": "491b295b02e8f83940a1750f11aee1e52c7619ccabb5e39f56be74c364286284"
+      "sha256": "b0e5208b6fa03d5ad10a1a6410df0a82e32fa7fadfcc05b0cb53834294852458"
     },
     {
       "path": "docs/quickstart.md",
-      "sha256": "fce4882de189f62b9d2144bf886a7780b2b275777ab51ae074a350fd75926f81"
+      "sha256": "3af6b88ebca51abef0c669d620b3c1509e284eb86ddd334aac942133060c7130"
     },
     {
       "path": "docs/runtime.md",
-      "sha256": "aa5b0856b1c642dd9a816bc6c234f39582cd7b6df0db5160b79781afb0248fd0"
+      "sha256": "65d0f6d2124b4f8a42850bdc83c70d86498516dd05c1a2b7f4f4ec3a81b72705"
     },
     {
       "path": "docs/semantic-decoding.md",
@@ -248,7 +252,7 @@
     },
     {
       "path": "docs/test-oracles.md",
-      "sha256": "229961ff617b8960ed5b8c2df16bd7ea839c1f502abf57f6f97f379a0e6886cd"
+      "sha256": "1c34adee515049002d30de8c94873413c9daf8f99d00e24a6f8cc41c1e52e42f"
     },
     {
       "path": "docs/visual-tool-discovery.md",
@@ -316,7 +320,7 @@
     },
     {
       "path": "scripts/check-mutations.mjs",
-      "sha256": "eff905c14fa7374504fa8da2448ed1b10bbcea436811267b77c22a5e20c1e3f8"
+      "sha256": "4f1e2980e1b69d3eee7345904a89ad75865b044c17cdece5d13ba576da0b4313"
     },
     {
       "path": "scripts/contrast.mjs",
@@ -332,11 +336,11 @@
     },
     {
       "path": "scripts/interface-review.mjs",
-      "sha256": "c82b61c2abb01d91cf8ad8674d5ec1948dc474b223b04099dec33a09bb6cc184"
+      "sha256": "f664f5b979d1cc9302a7f496cc9a85f40955820892dafe81fa53cd3263f4ddf9"
     },
     {
       "path": "scripts/learning.mjs",
-      "sha256": "9e0e26181fa2581e1403882c0c8ac0c72dc38b3bfd83e54d88d4bf48e6f5916e"
+      "sha256": "461e548ae075d327318c94c3fc32e7f882b3e1e1bd600c8cec61e18153849deb"
     },
     {
       "path": "scripts/light-transport-diagnostics.mjs",
@@ -345,6 +349,10 @@
     {
       "path": "scripts/media-preflight.mjs",
       "sha256": "bb01e4bc20dae71c3abb886930d4ed0aa6653c22326d9ab0fff22f5a3a703873"
+    },
+    {
+      "path": "scripts/private-state.mjs",
+      "sha256": "441aa4781f07ef11bd2d248ded6f198adc0aa339dad661e6185ce10dc34bc330"
     },
     {
       "path": "scripts/ramp.mjs",
@@ -372,7 +380,7 @@
     },
     {
       "path": "scripts/workflow.mjs",
-      "sha256": "e0249c5c41cd8d9862d2c2e5a61d676dda76906830dd53d1f0dd452ae3980033"
+      "sha256": "5ad6d4e2d8f7108dd98cf75d6eb3bfa9d9aee504b9e1d0d5505a03dc73f9960e"
     },
     {
       "path": "tests/collector-oracles.test.mjs",
@@ -401,6 +409,10 @@
     {
       "path": "tests/interface-review.test.mjs",
       "sha256": "976f6d8a3fac3345f71a71588980e3185abe5486993157f03dd2afa19e54febf"
+    },
+    {
+      "path": "tests/learning-safety.test.mjs",
+      "sha256": "9375bfd7ba0221d37efe02b02453c234bd5d1687fdafadd2d9a810a362125121"
     },
     {
       "path": "tests/learning.test.mjs",

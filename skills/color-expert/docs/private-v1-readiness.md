@@ -7,7 +7,7 @@ This records the initial private-candidate work and current release checks. It i
 - Whole-folder agent invocation, runnable examples, complete quickstart and troubleshooting.
 - Dependency-free Node installation; one command runs tests and exact manifest consistency.
 - Actual-interface prepare emits an evidence template whose defaults cannot pass; missing observation stays unverified.
-- 103 tests cover numerical tools, routing, domain/state contracts, review safeguards and distribution integrity.
+- 112 tests cover numerical tools, routing, domain/state contracts, review safeguards and distribution integrity.
 - The prior independent rendered desktop-default/mobile-error proof remains valid for its frozen artifact and was re-assessed successfully. No new visual or human study was performed during packaging.
 - Finder metadata removed from the candidate, with new distribution checks rejecting OS junk, unlisted files, changed hashes and symlinks. Original research retained intact.
 
