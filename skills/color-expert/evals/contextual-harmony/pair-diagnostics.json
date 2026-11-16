@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "status": "candidate-not-run",
+  "sourceIds": [
+    "pair-research-detail",
+    "pair-judgement-method"
+  ],
+  "kind": "project development diagnostics, not a replication",
+  "targets": {
+    "pairHarmony": {
+      "scope": "whole pair",
+      "anchors": {
+        "1": "disconnected",
+        "3": "partly connected",
+        "5": "mutually supportive"
+      }
+    },
+    "pairPreference": {
+      "scope": "whole pair",
+      "anchors": {
+        "1": "strongly dislike",
+        "3": "neutral",
+        "5": "strongly like"
+      }
+    },
+    "foregroundPreference": {
+      "scope": "named foreground region on named background",
+      "anchors": {
+        "1": "strongly dislike",
+        "3": "neutral",
+        "5": "strongly like"
+      }
+    },
+    "briefFit": {
+      "scope": "actual application and intended story",
+      "anchors": {
+        "1": "contradicts brief",
+        "3": "broadly appropriate",
+        "5": "clearly specific to brief"
+      }
+    }
+  },
+  "requiredRecords": [
+    "briefId",
+    "revision",
+    "armSnapshot",
+    "foregroundRegion",
+    "backgroundRegion",
+    "deliveredColors",
+    "constructionSpace",
+    "renderedLuminance",
+    "actualAreaAndAdjacency",
+    "visualEvidence",
+    "reviewerType",
+    "ratingTarget",
+    "rating",
+    "observations"
+  ],
+  "controls": [
+    "same renderer and composition",
+    "fixed copy, geometry, area, adjacency and viewing size",
+    "randomized anonymous arm labels",
+    "counterbalance rating-target order across observers",
+    "rationale hidden until visual ratings fixed",
+    "same revision and generation budget"
+  ],
+  "cases": [
+    {
+      "id": "support-family",
+      "change": "support hue relationship",
+      "hold": "focal region, areas, intended lightness/chroma",
+      "question": "Does coherence change without losing brief fit?",
+      "hypothesis": "A more related supporting family may help a disconnected treatment; no forced winner."
+    },
+    {
+      "id": "focal-value",
+      "change": "foreground-to-ground lightness",
+      "hold": "hue strategy, areas and story",
+      "question": "Does the composition improve without destroying its mood?",
+      "hypothesis": "A value adjustment may solve dullness without adding hue; verify delivered luminance and functional contrast."
+    },
+    {
+      "id": "focal-background",
+      "change": "background hue, in separate low/high lightness-difference blocks",
+      "hold": "named foreground color, area, composition and chroma where in gamut",
+      "question": "Do focal liking and whole-pair liking diverge, and does the pattern depend on lightness?",
+      "hypothesis": "Contrasting backgrounds are candidates, not presumed improvements; report gamut or luminance confounds."
+    },
+    {
+      "id": "role-reversal",
+      "change": "swap figure and ground assignments",
+      "hold": "color set and geometry",
+      "question": "Does the same color set work differently in different roles?",
+      "hypothesis": "Role assignment may matter; do not count swapped displays as equivalent."
+    }
+  ],
+  "analysis": "Keep every target separate; report per-brief paired differences, ties, disagreement and uncertainty. No combined beauty score. Model-critic feedback is not human validation. Confirm ground/foreground labels before interpreting results.",
+  "gates": [
+    "independent reviewer actually sees live rendered pixels",
+    "required functional contrast and non-color cues cannot be waived",
+    "blocked visual access means not run",
+    "no preference ledger entry without actual user evidence"
+  ],
+  "limits": [
+    "No candidates or participants yet; no effect demonstrated.",
+    "These cases are visible development tasks, not held out.",
+    "Munsell/BCP findings are not numeric OKLCH prediction coefficients.",
+    "A simple pair diagnostic cannot certify a multi-color narrative composition."
+  ]
+}

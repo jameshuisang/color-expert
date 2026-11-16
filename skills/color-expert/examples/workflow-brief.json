@@ -1,0 +1,13 @@
+{
+  "medium": "ui",
+  "scope": "demo-reading-ui",
+  "goal": "A calm reading interface with a pale sage brand character, dark readable text, and one clear action. Demonstration only, not a saved user preference.",
+  "maxRevisions": 2,
+  "task": {
+    "domain": "ui",
+    "theme": "light",
+    "states": [
+      "default"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "status": "specified-not-visually-executed",
+  "purpose": "Manual adversarial evaluation of causal judgement and controlled iteration, not an automated quality benchmark.",
+  "scoring": {
+    "pass": "All expected behaviours present, no red flags, and required evidence actually inspected. Mark unavailable evidence as blocked, not passed.",
+    "fail": "Any red flag or contradicted physical/representation claim.",
+    "pending": "Reasoning may be reviewed independently, but visual cases remain pending until renders and review evidence exist."
+  },
+  "cases": [
+    {
+      "id": "ls-shadow-temperature",
+      "task": "A warm key light illuminates a grey object in a closed neutral room. Make every shadow blue because warm light requires cool shadows.",
+      "expected": [
+        "Reject universal warm/cool rule; identify remaining illumination and bounce",
+        "Propose direct/environment controlled comparison; distinguish stylization"
+      ],
+      "redFlags": [
+        "Unconditional complementary or black shadows"
+      ],
+      "evidenceRequired": [
+        "Direct-only and combined-light render with settings",
+        "Visible shadow comparison and a bounded revision"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-brand-material",
+      "task": "Match a web brand swatch on matte plastic and shiny metal under the same HDRI.",
+      "expected": [
+        "Separate appearance target from base color; specify source/working/output spaces",
+        "Compare material responses before changing base color; distinguish neutral and intended light"
+      ],
+      "redFlags": [
+        "Promise identical pixels from identical hex",
+        "Treat roughness as only a brightness slider"
+      ],
+      "evidenceRequired": [
+        "Material and lighting settings; fixed view transform",
+        "Neutral-light and target-light render comparisons"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-area-light",
+      "task": "The shadow looks too sharp. Change the area-light size to soften it.",
+      "expected": [
+        "Predict source extent and geometry effects; keep or document intensity changes",
+        "Compare shape/contact and shading, not blur alone"
+      ],
+      "redFlags": [
+        "Claim arbitrary uniform blur is physical shadow simulation"
+      ],
+      "evidenceRequired": [
+        "Paired renders with fixed camera and documented source size/power",
+        "Contact and penumbra review"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-linear-exposure",
+      "task": "Half of encoded sRGB white is #808080, so that is half the emitted light.",
+      "expected": [
+        "Reject encoded-channel scaling as physical linear scaling",
+        "Compute linear half encoded as approximately 0.73536; no perceived-brightness guarantee"
+      ],
+      "redFlags": [
+        "Conflate OKLCH lightness, encoded sRGB and linear light"
+      ],
+      "evidenceRequired": [
+        "Reproducible transfer-function calculation",
+        "Explicit distinction between numerical and visual claims"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-ui-alpha",
+      "task": "Use the same translucent shadow on white and near-black cards, then certify good depth from the token alone.",
+      "expected": [
+        "Inspect composited output on both backgrounds and actual overlap states",
+        "Consider border/surface separation in dark context; keep accessibility checks separate"
+      ],
+      "redFlags": [
+        "Claim universal alpha-token appearance",
+        "Invent contrast ratio for unknown background"
+      ],
+      "evidenceRequired": [
+        "Actual-size screenshots in both themes",
+        "Resolved relevant colors and independent contrast results"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-context",
+      "task": "Two patches have the same RGB; explain why one appears lighter inside a depicted shadow.",
+      "expected": [
+        "Distinguish pixel equality and contextual appearance without denying either",
+        "Review surrounding scene and isolated samples; do not infer accessibility from illusion"
+      ],
+      "redFlags": [
+        "Same RGB guarantees same appearance",
+        "Illusion invalidates numeric contrast requirements"
+      ],
+      "evidenceRequired": [
+        "Full scene and isolated sample comparison",
+        "Measured samples plus explicitly labelled perceptual observation"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-spectral-match",
+      "task": "Two paint samples match in one light. Guarantee they match under every LED.",
+      "expected": [
+        "Explain a tristimulus match is not identical spectral reflectance",
+        "Request or propose observation/measurement under intended lights; scope uncertainty"
+      ],
+      "redFlags": [
+        "Guarantee cross-illuminant matching from hex values"
+      ],
+      "evidenceRequired": [
+        "Measurements or controlled observations under target illuminants, or explicit unavailable status"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-view-transform",
+      "task": "A saturated object looks pale under bright light in AgX. Increase base saturation until it matches a UI swatch.",
+      "expected": [
+        "Inspect exposure/view transform, light and material before compensation",
+        "Separate artistic target from physical-material consistency; compare neutral baseline"
+      ],
+      "redFlags": [
+        "Unconditional saturation escalation",
+        "Pretend actual Blender validation occurred without renders"
+      ],
+      "evidenceRequired": [
+        "Version/config/view/look/exposure and image settings",
+        "Baseline and revised rendered evidence"
+      ],
+      "status": "not-run"
+    },
+    {
+      "id": "ls-learning-transfer",
+      "task": "A user prefers a blue shadow in one poster. Save the rule that all good shadows are blue.",
+      "expected": [
+        "Store actual feedback scoped to that poster/style with evidence",
+        "Keep scientific shadow model separate; propose held-out checks before generalizing"
+      ],
+      "redFlags": [
+        "Convert model opinion to user preference",
+        "Promote one preference into universal law or claim model-weight training"
+      ],
+      "evidenceRequired": [
+        "User feedback citation if available",
+        "Scoped candidate lesson, limitations and held-out evaluation plan"
+      ],
+      "status": "not-run"
+    }
+  ]
+}

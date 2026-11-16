@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "status": "candidate-not-run",
+  "purpose": "Evaluate context-appropriate color storytelling and relational harmony, separately from liking and numerical correctness.",
+  "design": {
+    "arms": [
+      "general model",
+      "existing expert snapshot",
+      "expert with contextual-harmony method"
+    ],
+    "controls": [
+      "same model and runtime",
+      "same brief and tools",
+      "same fixed renderer, composition, text and geometry",
+      "same output schema",
+      "same generation and revision budget",
+      "randomized anonymous labels and presentation order"
+    ],
+    "preregistration": "Before generation, freeze brief set, arm snapshots, renderer, rubric anchors, revision budget, reviewer instructions and analysis plan. These development briefs are visible to the author and are NOT held out. Use separately authored unseen briefs for claims of transfer.",
+    "renderRequirement": "Independent fresh reviewer must actually inspect live rendered pixels for each evaluated revision. If blocked, mark not run; no code-only judgement."
+  },
+  "reviewStages": [
+    "Hide arm identity, brief and author rationale. Ask for perceived story/qualities and first noticed element in free text.",
+    "Reveal brief, but not rationale. Rate brief fit, relational harmony, attention hierarchy and appropriate distinctiveness using anchored 1\u20135 scales, concrete observations and confidence.",
+    "Read rationale only after visual ratings are fixed; assess correspondence to visible choices separately.",
+    "Record preference last, with reason if offered. Do not infer a reason for an unexplained vote."
+  ],
+  "rubric": {
+    "briefFit": {
+      "1": "Contradicts intended meaning or strongly evokes the explicitly avoided reading.",
+      "3": "Broadly suitable but generic or mixed cues.",
+      "5": "Distinctive and consistent support for the stated context and story."
+    },
+    "relationalHarmony": {
+      "1": "Unintended clashes or disconnected dominant/support/focal relationships.",
+      "3": "Mostly coherent, with a visible competing or weak relationship.",
+      "5": "Colors belong together at their actual areas and adjacency; deliberate tension is integrated."
+    },
+    "attentionHierarchy": {
+      "1": "Wrong element dominates or required focal/action region is lost.",
+      "3": "Intended order can be found but competition remains.",
+      "5": "Declared attention order reads clearly without unnecessary competition."
+    },
+    "appropriateDistinctiveness": {
+      "1": "Generic or novelty conflicts with the brief.",
+      "3": "Some specific character, unevenly sustained.",
+      "5": "Recognizable character serves this brief without sacrificing meaning or use."
+    }
+  },
+  "measurement": {
+    "hardGates": [
+      "all specified text/background contrasts verified from actual rendered usage",
+      "color is not the sole required semantic cue",
+      "required roles, source fidelity and gamut constraints checked when applicable"
+    ],
+    "outcomes": [
+      "blind human story attribution and coding against a frozen intent codebook",
+      "per-dimension human rating distributions and paired differences",
+      "observed task correctness when the brief has a functional task",
+      "personal preference reported independently"
+    ],
+    "analysis": "Report per brief and across briefs, ties, disagreement, sample sizes and uncertainty. Do not collapse everything into an objective beauty percentage. If only model critics participated, label results model-critic development feedback, not human validation.",
+    "audience": "Recruit relevant audience only with authorization; no outreach or participant data collection is authorized by this file. Multiple independent raters and briefs are needed before a general performance claim."
+  },
+  "briefs": [
+    {
+      "id": "reading-recovery",
+      "context": "Reading app returning after a stressful day",
+      "intended": "restorative but not sleepy",
+      "avoid": "clinical or sterile",
+      "focal": "resume reading action"
+    },
+    {
+      "id": "night-culture",
+      "context": "Evening community arts festival poster",
+      "intended": "energetic and welcoming",
+      "avoid": "exclusive luxury nightclub",
+      "focal": "festival name then date"
+    },
+    {
+      "id": "family-memory",
+      "context": "Family memory archive landing page",
+      "intended": "warm continuity and care",
+      "avoid": "generic wellness product",
+      "focal": "shared memory photograph"
+    },
+    {
+      "id": "maker-lab",
+      "context": "Creative coding workspace onboarding",
+      "intended": "precise tools with playful possibility",
+      "avoid": "childish toy or enterprise bureaucracy",
+      "focal": "start creating action"
+    },
+    {
+      "id": "urgent-repair",
+      "context": "Service dashboard with a real urgent issue",
+      "intended": "calm control with unmistakable urgency",
+      "avoid": "everything alarming or alarm concealed",
+      "focal": "critical issue and next action"
+    },
+    {
+      "id": "quiet-rebellion",
+      "context": "Independent editorial cover challenging an established convention",
+      "intended": "restrained but defiant",
+      "avoid": "passive blandness or indiscriminate loudness",
+      "focal": "editorial title"
+    }
+  ],
+  "limitations": [
+    "No generated candidates or visual evaluation yet.",
+    "Guidance and protocol-integrity tests do not demonstrate improved color judgement.",
+    "Subjective harmony has no universal numerical ground truth.",
+    "Story recognition can be affected by copy and imagery; keep them fixed for within-brief comparisons and report the limitation."
+  ]
+}

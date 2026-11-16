@@ -1,0 +1,39 @@
+{
+  "status": "targeted-checks-not-exhaustive-clearance",
+  "testsPassed": 103,
+  "testsFailed": 0,
+  "install": "npm ci --ignore-scripts --offline passed; no external dependencies",
+  "smokeChecks": [
+    "contrast example passed",
+    "sequential ramp example passed",
+    "space conversion example passed",
+    "every indexed retrieval route passed",
+    "host-mediated workflow synthetic state/evidence tests passed",
+    "actual-interface artifact preparation, independent rendered review and scoped evidence assessment passed",
+    "prepared evidence template remains unverified until real observations",
+    "earlier frozen independent browser evidence re-assessed successfully",
+    "distribution integrity checks reject OS metadata, changed/extra files and symlinks",
+    "renamed color paths resolve and legacy route request compatibility passes"
+  ],
+  "visualEvaluation": "Historical two-case independent browser proof in the prior candidate. Spelling-only migration has not undergone a new visual study; no review automatically transfers to changed artifacts.",
+  "patternScanHits": [],
+  "licenseCopiesByteIdentical": {
+    "docs/licenses/apca-w3-0.1.9.md": true,
+    "docs/licenses/colorparsley-0.1.8.md": true
+  },
+  "limitations": [
+    "Pattern scan is not secret/privacy clearance.",
+    "MIT approved for original work; targeted third-party notice review completed, not legal clearance.",
+    "Cross-host setup and clean-machine execution beyond current host are not verified.",
+    "New source-derived additions require renewed rights review; existing targeted review is not blanket clearance.",
+    "Actual-interface support is self-contained HTML with host-mediated review, not arbitrary application automation."
+  ],
+  "packaging": "Private manifest-allowlisted archive; no runs, captures, metadata or personal feedback. Fresh extracted-copy offline install and check performed.",
+  "mutationCheck": {
+    "baselineTests": 16,
+    "seededFaultsDetected": 8,
+    "comprehensive": false
+  },
+  "installation": "Actual Skills CLI1.9.0 local copy install into fresh Codex project passed; GitHub remote installation not tested at release preparation.",
+  "mediaRefinement": "Three routes and eight declaration-contract tests added; no real photo/video/print/material execution or efficacy evaluation."
+}

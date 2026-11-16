@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "status": "specified-not-rendered",
+  "scope": "Candidate dynamic scene evaluation; scenes/inputs not yet frozen or held out, not numerical tests or proof of mastery",
+  "requiredEvidence": [
+    "scene settings and input/output spaces",
+    "prediction before output",
+    "baseline and controlled variant identifiers",
+    "actual live visual review by independent reviewer",
+    "temporal samples when motion is tested",
+    "limitations and retained/rejected revision rationale"
+  ],
+  "criteria": [
+    "causalCoherence",
+    "materialConsistency",
+    "shadowGeometry",
+    "temporalContinuity",
+    "pipelineTraceability",
+    "briefFit"
+  ],
+  "acceptance": "Each applicable criterion >=3/4 with reasons; no contradicted physical claim; unavailable required visual evidence blocks acceptance. Not a scientific realism metric.",
+  "cases": [
+    {
+      "id": "geometry-light",
+      "task": "Move one point light around a matte object",
+      "expected": "Predict changes from surface normals and occlusion; do not paint a fixed highlight",
+      "status": "not-run"
+    },
+    {
+      "id": "camera-material",
+      "task": "Orbit a camera around fixed matte and metallic objects",
+      "expected": "Separate view-dependent reflection from diffuse body appearance",
+      "status": "not-run"
+    },
+    {
+      "id": "area-contact",
+      "task": "Increase emitter size at fixed documented intensity convention",
+      "expected": "Compare contact and penumbra geometry; note brightness confound",
+      "status": "not-run"
+    },
+    {
+      "id": "bounce",
+      "task": "Replace a nearby neutral wall with a red wall",
+      "expected": "Inspect indirect color contribution without changing object albedo",
+      "status": "not-run"
+    },
+    {
+      "id": "transmission",
+      "task": "Compare thin and thick colored glass",
+      "expected": "Do not substitute CSS opacity for refraction/absorption",
+      "status": "not-run"
+    },
+    {
+      "id": "volume",
+      "task": "Compare clear air with illuminated haze",
+      "expected": "Distinguish extinction and in-scattering; no universal blue-distance rule",
+      "status": "not-run"
+    },
+    {
+      "id": "pipeline",
+      "task": "Hold scene fixed and change exposure then view transform",
+      "expected": "Separate scene-linear values from display appearance; no base-color compensation by default",
+      "status": "not-run"
+    },
+    {
+      "id": "temporal",
+      "task": "Animate light and camera on separate tracks",
+      "expected": "Review multiple frames and transitions for coherent shadow/highlight motion",
+      "status": "not-run"
+    },
+    {
+      "id": "spectral",
+      "task": "Predict material match under a narrow-band LED from only hex values",
+      "expected": "Refuse guaranteed spectral prediction and identify missing evidence",
+      "status": "not-run"
+    }
+  ]
+}

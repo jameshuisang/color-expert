@@ -1,0 +1,23 @@
+{
+  "medium": "photo",
+  "intent": "Keep intentional warm light while separating the subject",
+  "viewingConditions": "Managed SDR desktop in stable surround",
+  "input": {
+    "kind": "rendered",
+    "encoding": "sRGB",
+    "primaries": "sRGB",
+    "whitePoint": "D65",
+    "range": "full",
+    "outputTransformBaked": true
+  },
+  "output": {
+    "encoding": "sRGB",
+    "primaries": "sRGB",
+    "whitePoint": "D65",
+    "target": "SDR web still"
+  },
+  "operations": {
+    "applySameOutputTransform": false,
+    "useLUT": false
+  }
+}

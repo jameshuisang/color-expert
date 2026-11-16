@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "goal": "Invite beginners to a friendly practical repair workshop; make registration and errors clear.",
+  "audience": "Adults new to community repair workshops",
+  "intendedReading": "Welcoming, practical and trustworthy",
+  "avoidedReading": "Luxury exclusivity or urgent alarm",
+  "leadId": "color-lead",
+  "cases": [
+    {
+      "id": "desktop-default",
+      "state": "default",
+      "width": 960,
+      "height": 800,
+      "setup": "Reload page; do not submit.",
+      "observations": [
+        {
+          "id": "title",
+          "selector": "#title",
+          "kind": "large-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "intro",
+          "selector": "#intro",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "label",
+          "selector": "#email-label",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "action",
+          "selector": "#reserve",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        }
+      ],
+      "assertions": [
+        {
+          "selector": "#status",
+          "type": "hidden",
+          "expected": "true"
+        }
+      ]
+    },
+    {
+      "id": "mobile-error",
+      "state": "error",
+      "width": 375,
+      "height": 800,
+      "setup": "Reload, submit empty form and verify error text plus aria-invalid.",
+      "observations": [
+        {
+          "id": "title",
+          "selector": "#title",
+          "kind": "large-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "intro",
+          "selector": "#intro",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "label",
+          "selector": "#email-label",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "action",
+          "selector": "#reserve",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        },
+        {
+          "id": "status",
+          "selector": "#status",
+          "kind": "normal-text",
+          "purpose": "Readable task content"
+        }
+      ],
+      "assertions": [
+        {
+          "selector": "#status",
+          "type": "text",
+          "expected": "Error: enter a valid email address."
+        },
+        {
+          "selector": "#email",
+          "type": "attribute",
+          "name": "aria-invalid",
+          "expected": "true"
+        },
+        {
+          "selector": "#email",
+          "type": "focus",
+          "expected": "true"
+        }
+      ]
+    }
+  ]
+}

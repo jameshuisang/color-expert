@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "status": "Working convictions, not universal aesthetic laws",
+  "principles": [
+    {
+      "id": "relational",
+      "conviction": "Design relationships, not a row of attractive swatches.",
+      "evidenceClass": "perceptual-foundation + studio-method",
+      "action": "Judge every important color against its actual neighbors, at the size and amount it will occupy.",
+      "conditions": "A swatch is a useful starting sample, not a final composition.",
+      "example": "For a poster, compare the same coral title on cream and dark blue; keep the lettering size fixed so the background is the variable. For UI, review the accent inside the real button and surrounding surface.",
+      "tradeoff": "This can require separate tokens in light and dark themes rather than preserving one brand hex everywhere.",
+      "check": "Compare two contextual mockups; ask which element is read first and whether the intended relationship survives.",
+      "sources": [
+        "albers-context",
+        "color-fidget-lessons"
+      ]
+    },
+    {
+      "id": "structure",
+      "conviction": "Establish light\u2013dark structure before multiplying hues.",
+      "evidenceClass": "studio-heuristic",
+      "action": "When hierarchy is unclear, separate the focal element, supporting planes and ground in lightness before adding another hue.",
+      "conditions": "Use especially for small type, dense interfaces and representational subjects. Equal-lightness vibration can be intentional in expressive work.",
+      "example": "Try an ink-dark headline, middle-value illustration and pale ground. Keep those roles while auditioning teal versus rust. A grayscale view is a diagnostic, not the final aesthetic judge.",
+      "tradeoff": "Flattening everything into maximum contrast can destroy atmospheric depth or quietness. Protect essential reading, not every decorative edge.",
+      "check": "Inspect thumbnail and grayscale structure, then return to color; measure required text pairs separately.",
+      "sources": [
+        "dow-composition",
+        "wcag-text"
+      ]
+    },
+    {
+      "id": "emphasis",
+      "conviction": "Spend vividness and contrast where attention belongs.",
+      "evidenceClass": "studio-heuristic",
+      "action": "Decide what should dominate; reduce competing chroma, area or contrast elsewhere before making the focal color louder.",
+      "conditions": "A small vivid accent is a reliable starting option, not a universal rule. A vivid field can frame a quieter focal object.",
+      "example": "In an illustration, hold distant foliage in lower chroma and reserve vivid orange for a subject. In a dense tool, keep ordinary panels restrained and use a clear action accent.",
+      "tradeoff": "Equal high intensity can serve a deliberately exuberant or confrontational poster; use scale and placement to retain hierarchy.",
+      "check": "Ask whether two equally emphatic elements are meant to compete. If not, alter one variable and compare.",
+      "sources": [
+        "color-fidget-lessons",
+        "dow-composition"
+      ]
+    },
+    {
+      "id": "coherence",
+      "conviction": "Create a shared constraint, then choose deliberate variation.",
+      "evidenceClass": "studio-heuristic",
+      "action": "Begin with a limited hue family, common character or repeated accent. Add a color only when it performs a distinct job.",
+      "conditions": "The constraint can be hue, chroma, value or role; it need not be a fixed number of colors.",
+      "example": "A warm paper ground, dark brown lettering and one blue accent share restrained supporting tones while allowing a cool focal interruption. An analogous green scene can vary lightness widely without adding a complementary red.",
+      "tradeoff": "Too much sameness loses distinctions; a cohesive palette is not necessarily the most exciting or best-liked one.",
+      "check": "State what unifies the palette and what intentionally breaks that pattern. Remove one color and see whether a useful distinction is lost.",
+      "sources": [
+        "color-fidget-lessons",
+        "pair-research",
+        "character-harmony"
+      ]
+    },
+    {
+      "id": "roles",
+      "conviction": "A palette needs roles, proportions and placement.",
+      "evidenceClass": "studio-heuristic + interface-contract",
+      "action": "Define ground, support, focal and semantic roles before delivering tokens. Show their relative use, not just equal swatches.",
+      "conditions": "60\u201330\u201310 may help an initial study; never enforce its percentages as correctness.",
+      "example": "A poster can use a dominant orange field and quiet cream title; the same colors may reverse roles in a reading app. Error and success colors in software must retain meaning across screens.",
+      "tradeoff": "A high-chroma field may fit expressive work yet make long reading or dense status displays harder to organize.",
+      "check": "Review the palette applied to a representative composition and, for UI, include default, hover, focus, error and disabled situations as relevant.",
+      "sources": [
+        "color-fidget-lessons",
+        "confident-color"
+      ]
+    },
+    {
+      "id": "medium",
+      "conviction": "Carry the intention across media, not an unexamined color recipe.",
+      "evidenceClass": "technical-constraint",
+      "action": "State medium and color model. Proof the actual output before claiming a match or mixture.",
+      "conditions": "Perceptual spacing, display interpolation and pigment mixing answer different questions.",
+      "example": "Translate a screen palette into an acrylic study with measured test swatches, not an RGB average. A wide-gamut accent needs an evaluated sRGB alternative; print needs a proof on the intended stock.",
+      "tradeoff": "A lower-chroma reproduction may preserve hierarchy better than chasing an impossible saturated match.",
+      "check": "Record the color space for digital values and pigments/support/lighting for physical studies. Distinguish proposed from physically verified results.",
+      "sources": [
+        "color-models",
+        "golden-mixing",
+        "appearance-models",
+        "hue-planes"
+      ]
+    },
+    {
+      "id": "meaning",
+      "conviction": "Use color to express an intention; test the interpretation.",
+      "evidenceClass": "empirical-boundary + studio-method",
+      "action": "Name the desired character and audience, choose a defensible direction, then test it in context.",
+      "conditions": "Do not equate harmonious, beautiful, noticeable and appropriate. They are different goals.",
+      "example": "For a calm brand, begin with restrained chroma and a clear value range; compare with a more vivid version before deciding. Do not claim that blue automatically produces trust.",
+      "tradeoff": "A deliberately dissonant scheme may be the stronger expressive choice; calm is not always better.",
+      "check": "Ask whether it communicates the brief and which version the intended audience prefers. Report the rationale as judgment, not scientific certainty.",
+      "sources": [
+        "pair-research",
+        "color-fidget-lessons"
+      ]
+    },
+    {
+      "id": "function",
+      "conviction": "Never purchase visual elegance by making meaning inaccessible.",
+      "evidenceClass": "accessibility-constraint",
+      "action": "Keep essential text and functional distinctions usable; improve decorative freedom around that constraint.",
+      "conditions": "Measured WCAG text contrast is one check, not complete accessibility or a beauty score.",
+      "example": "Use a pale brand color as a surface with dark text rather than forcing pale text on white. Pair error color with a message or symbol.",
+      "tradeoff": "An artist may intentionally hide a form; an interface must not hide information users need.",
+      "check": "Run the provided checker on opaque sRGB pairs; require rendered analysis for transparency/images and non-color cues for meaningful states.",
+      "sources": [
+        "wcag-text",
+        "use-of-color"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Visual tool discovery: lead and reviewer
+
+Before visual review, inspect the tools actually available to this host and the selected execution environment. Discover an authorized visual browser capability, for example an exposed Playwright browser tool or Egolite; names are examples, not assumptions that either is installed. Read that tool’s current skill/help and use only its supported API. Respect the user’s specified browser/session; otherwise prefer an already available authorized browser that can open the exact preview and return rendered pixels to the reviewer. DOM snapshots, computed styles, HTML and code alone do not count as vision. Verify actual visual output, not merely a successful navigation or screenshot command. Use transient visual output where supported; no saved PNG is required. Do not install software, invent tools, launch an unsupported browser driver, bypass permission/security denials or switch environments to evade them. If the selected environment lacks the needed preview/session or capability, check permitted available environments and coordinate access with the lead. If no authorized visual path exists, stop and report the exact blocker without approving the revision. Record the tool/browser, session, URL, revision binding and actual visual inspection method in the review.
+
+## Operational sequence
+
+1. Lead inventories available host tools and selected environment, locates preview/session, and passes verified capability details plus the narrow review packet to the separate reviewer. Do not assume a child inherits the same tools.
+2. Reviewer independently checks its tool availability. Read the relevant browser skill/help before acting. Egolite users must follow its current task-space and ownership workflow; a Playwright capability must use its exposed supported interface, not a guessed import or new installation.
+3. Open the current revision in that browser, read the live binding token and obtain rendered visual output. Actually inspect the pixels before scoring. If only text/DOM is exposed, report that vision is missing.
+4. Return the real browser/tool method and evidence with rubric scores. Missing vision blocks acceptance even when all numerical checks pass. A failed or denied tool action is not permission to route around restrictions.
+
+Tool discovery is a host responsibility, not an automatic probe performed by the local CLI. The generated independent-review packet repeats this protocol so it survives fresh-context delegation.

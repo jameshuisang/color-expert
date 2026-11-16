@@ -1,0 +1,11 @@
+{
+  "type": "sequential",
+  "direction": "increasing",
+  "colors": [
+    "#17212B",
+    "#455869",
+    "#8499A5",
+    "#D7E2E5",
+    "#F7FAFA"
+  ]
+}

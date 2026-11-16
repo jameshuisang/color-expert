@@ -1,0 +1,13 @@
+{
+  "tokens": {
+    "background": "#F8FAF6",
+    "surface": "#DFE8DB",
+    "text": "#24382B",
+    "mutedText": "#4C6152",
+    "accent": "#356044",
+    "accentText": "#FFFFFF"
+  },
+  "rationale": "Use the pale sage character on a supporting surface rather than on text. A nearly white reading field gives the dark green text clear light-dark structure, while one deeper green action creates emphasis without adding a competing hue family. This is a design judgment based on the role and character principles, not a universal guarantee of calmness.",
+  "alternative": "For a stronger sage identity, swap the background and surface tones while retaining dark text and the same action hue; compare the two in the actual reading layout and recheck all pairs rather than assuming the reversal works.",
+  "tradeoff": "The related greens are cohesive but restrained; this draft does not yet establish hover, focus, disabled or status colors, dark mode, or a full article's reading comfort. It is a synthetic opaque-sRGB study, not a verified brand palette or complete accessibility audit."
+}

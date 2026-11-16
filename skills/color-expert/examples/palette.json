@@ -1,0 +1,17 @@
+{
+  "provenance": "Synthetic test example, not a brand palette",
+  "pairs": [
+    {
+      "name": "body",
+      "foreground": "#222222",
+      "background": "#ffffff",
+      "minimum": 4.5
+    },
+    {
+      "name": "large heading",
+      "foreground": "#777777",
+      "background": "#ffffff",
+      "minimum": 3
+    }
+  ]
+}

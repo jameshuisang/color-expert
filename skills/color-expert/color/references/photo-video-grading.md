@@ -1,0 +1,22 @@
+# Photo and video color: diagnose, balance, then shape intent
+
+## Identify the signal before choosing the look
+
+Record source/camera encoding, primaries, transfer/log curve, white point, range interpretation, whether a look/output transform is baked, and the actual application/config/version. A file extension, codec name, flat-looking preview or screenshot does not establish the encoding. If tags disagree with provenance, investigate before transforming. Do not treat camera log, scene-linear RGB and finished display RGB as interchangeable.
+
+ACES separates capture/input conversion from creative looks and output rendering. An output transform targets a display and viewing conditions; it is not simply changing a tag or increasing saturation. Record exact transform IDs/config versions, including what was already applied. ACES2 output-transform terminology differs from older RRT/ODT descriptions; do not mix recipes across versions. [ACES input transforms](https://docs.acescentral.com/system-components/input-transforms/), [output transforms](https://docs.acescentral.com/system-components/output-transforms/), [AMF specification](https://docs.acescentral.com/amf/specification/) (documentation; no ACES implementation bundled).
+
+## Practical grading sequence (project workflow, not a universal preset)
+
+1. Establish what the scene should communicate and which relationships must survive. Keep a reference still and untouched source. Ask whether faithful reproduction, continuity or expressive departure is primary.
+2. Verify the source interpretation and viewing pipeline. For scene-referred work use the intended display rendering once; do not apply a technical output LUT again to an already baked version. LUT domain/range and intended placement must be known; a LUT is not a universal repair.
+3. Balance exposure and color where warranted before fine stylistic adjustments. Use a plausible neutral reference only when it should be neutral. Preserve intentional colored illumination; mixed lighting may need local treatment, not one global correction. Camera Raw distinguishes raw white-balance processing from approximate changes to already rendered JPEG/TIFF values. [Adobe Camera Raw color and tone](https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html)
+4. Shape tonal separation, focal emphasis and color relationships together. Protect relevant skin/product identity without prescribing a universal skin hue or obligatory teal/orange split. Inspect masks, clipping, noise and saturation artifacts at useful scale. Scopes support diagnosis; they do not decide the story or prove naturalness.
+5. For video, match representative shots across the edit and inspect playback through transitions, exposure changes, keys and motion. A good still does not prove temporal stability. Keep motivated differences between scenes; do not force every shot into identical statistics.
+6. Review the actual output target. State SDR/HDR encoding, gamut, peak/black assumptions and viewing environment; inspect SDR trims separately where required. PQ, HLG, camera log and scene-linear signals need their own correctly configured pipeline. This toolkit does not implement these transforms or measure HDR delivery.
+
+## Deliver and state what remains unknown
+
+Provide the intended look, adjustments with rationale, pipeline assumptions and source/working/output identities. Reopen the exported file in the intended managed viewer; verify tags, signal range, clipping and representative motion. Preserve originals and adjustment metadata. Never claim to restore clipped capture data or reconstruct raw sensor measurements from a finished image.
+
+No media has been graded by these notes; no NLE, raw processor, LUT/ICC/OCIO engine, codec exporter or scope reader is installed by the skill. Use host-specific authorized tools and independent actual-image/playback review. Browser palette review and analytic RGB checks are not substitutes.

@@ -1,0 +1,5 @@
+# Installer verification
+
+Skills CLI1.9.0 was actually run against the local self-contained package in fresh unrelated temporary projects, including an independent repeat. It discovered one color-expert skill and copied the complete directory to the Codex project skill location. The installed copy passed offline npm setup, 95 tests, six targeted mutation checks and the then-current manifest. Contrast and interface preparation CLI smoke checks also succeeded; preparation correctly remained unverified without new visual evidence.
+
+This verifies the local-path copy-mode journey on the current macOS host, not GitHub fetching, every agent, symlink mode, Windows, automatic triggering or new creative effectiveness. A fresh local installation after the license/notice additions also passed 95 tests, six mutation checks and the 104-file manifest. Subsequent attribution correction is covered by the final package check. No published GitHub address was used.
