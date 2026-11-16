@@ -17,6 +17,7 @@ This checks the package manifest, reference routes and one numerical smoke-test 
 - [Interface review](guides/interface-review.md): inspect self-contained HTML, states and viewports.
 - [Palette study](guides/palette-study.md): limited static UI/poster exploration.
 - [Media workflows](guides/media-workflows.md): print, materials, photo and video boundaries.
+- [Constrained recoloring](guides/locked-color-edits.md): check protected-layer conflicts before editing.
 - [Private feedback](guides/private-feedback.md): optional external storage, correction and revocation.
 
 ## Numerical tools

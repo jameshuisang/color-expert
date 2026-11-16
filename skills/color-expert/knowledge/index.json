@@ -121,6 +121,10 @@
     "print-proofing": [
       "cross-media-appearance",
       "monitor-management"
+    ],
+    "locked-color-edits": [
+      "locked-color-edits",
+      "color-decision"
     ]
   },
   "sources": [
@@ -372,6 +376,13 @@
       "path": "knowledge/references/photo-video-grading.md",
       "type": "project-synthesis",
       "coverage": "ACES input/output/metadata and Adobe Camera Raw source sections read; no grading execution"
+    },
+    {
+      "id": "locked-color-edits",
+      "path": "knowledge/references/locked-color-edits.md",
+      "kind": "project-method-pending-evaluation",
+      "reviewed": "2026-11-16",
+      "url": null
     }
   ]
 }

@@ -19,6 +19,8 @@ These are responsibilities, not a mandatory three-stage ceremony. Enter where th
 
 ### Make
 
+- For recoloring with preserved linework/geometry, use `locked-color-edits`: map protected properties and each edit to actual regions first. Resolve conflicting instructions before generation. Compare structural and focal emphasis when appropriate, and judge whole-scene object/material distinctions rather than focal pop alone. A declared lock is not pixel-fidelity proof.
+
 - Assign each color a job: dominant field, support, focal element or functional state. Specify relative area, neighbors and lightness/chroma relationships. Compare a recommendation with a meaningfully different alternative when the choice is genuinely open; do not create alternatives for a narrowly specified fix.
 - Apply colors at their intended size and placement, not only as equal swatches. Preserve the user's composition, tone and successful relationships. Before revising, name the defect, what must stay and the likely tradeoff; change the relevant relationship rather than automatically muting the whole work.
 - Use the medium's actual tools. The static controller is a fixed UI/poster palette study, not a finished app, grading tool or physical renderer. Prefer the actual-interface workflow for supported self-contained HTML. Do not simplify an unsupported task just to obtain a pass.

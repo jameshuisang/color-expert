@@ -13,6 +13,8 @@ Use a compact **context-to-color contract** before generating:
 
 For each substantial surface tint or dominant color, state its job: semantic role, narrative emphasis, material/illumination, or evidenced brand context. An adjective such as “sophisticated” alone is not a reason for a beige or blue wash. For functional UI, compare an unexplained tinted surface with a neutral candidate before adopting it; preserve required status and action meaning. For art, neutrality is not the default goal: a deliberately colored world or light source can be the intention. This is neither a ban on tints nor a preference for neutral, blue, green or beige palettes.
 
+For recoloring with preserved drawing or material distinctions, read `knowledge/references/locked-color-edits.md` before assigning colors. Resolve conflicts between protected linework and requested fills; compare structure-led and focal-led distributions when exploration is authorized.
+
 ## 2. Make one diagnostic correction, not a global cleanup
 
 Before revising, record **target**, **relationships to preserve**, and **likely tradeoff**. Examples of protected relationships are a face-to-hand action, a material distinction, or foreground/background separation. Quieting a competing reflection does not require desaturating the whole image. Muting, lightening and desaturation are not automatic improvements. Reduce the prompt to the requested correction and preserved relationships; do not add unrelated art-direction rules during an edit.

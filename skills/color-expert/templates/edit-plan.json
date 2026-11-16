@@ -1,0 +1,10 @@
+{
+  "mappingComplete": true,
+  "regions": [
+    {"id": "scene", "parent": null, "locked": []},
+    {"id": "ink", "parent": "scene", "locked": ["geometry", "stroke", "fill"]},
+    {"id": "interior", "parent": "scene", "locked": ["geometry"]}
+  ],
+  "overlaps": [],
+  "writes": [{"region": "interior", "property": "fill", "value": "#17454b"}]
+}
