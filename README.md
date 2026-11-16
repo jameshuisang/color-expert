@@ -1,7 +1,5 @@
 <h1 align="center">Color Expert</h1>
 
-<p align="center">Color decisions for the story, audience, and medium.<br />Not the same palette everywhere.</p>
-
 ## Install
 
 ```sh
