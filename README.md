@@ -1,8 +1,18 @@
-# Color Expert
+<h1 align="center">Color Expert</h1>
 
-Help your agent choose and review colors for the story, audience, and medium, rather than apply the same palette everywhere.
+<p align="center">Color decisions for the story, audience, and medium.<br />Not the same palette everywhere.</p>
 
-[Install](#install) · [Try it](#try-it) · [How it works](#how-it-works) · [Documentation](#documentation)
+<p align="center">
+  <a href="#install"><img src="assets/readme/install.svg" alt="Install Color Expert" width="120" height="36" /></a>
+  &nbsp;
+  <a href="https://github.com/jameshuisang/color-expert"><img src="assets/readme/source.svg" alt="View the source repository" width="96" height="36" /></a>
+  &nbsp;
+  <a href="skills/color-expert/docs/quickstart.md"><img src="assets/readme/docs.svg" alt="Read the documentation" width="100" height="36" /></a>
+  &nbsp;
+  <a href="skills/color-expert/RELEASE-NOTES.md"><img src="assets/readme/releases.svg" alt="Read release notes" width="152" height="36" /></a>
+  &nbsp;
+  <a href="LICENSE"><img src="assets/readme/license.svg" alt="MIT license for original contributions" width="102" height="36" /></a>
+</p>
 
 ## Install
 
@@ -81,3 +91,4 @@ Optional persistence stores only authorized user feedback in an explicit **priva
 ## License
 
 [MIT](LICENSE) applies to original project contributions. Third-party material retains its own terms; read [Third-party notices](skills/color-expert/THIRD-PARTY-NOTICES.md). Targeted review is not exhaustive legal, privacy, or security clearance.
+
