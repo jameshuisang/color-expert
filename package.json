@@ -1,0 +1,16 @@
+{
+  "name": "color-expert-development",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test verification/tests/*.test.mjs",
+    "test:mutations": "node verification/tools/check-mutations.mjs",
+    "check": "npm test && npm run test:mutations && npm --prefix skills/color-expert run check",
+    "test:browser": "node --test verification/browser/*.test.mjs"
+  }
+}

@@ -1,14 +1,12 @@
 {
-  "name": "color-expert-clean-candidate",
+  "name": "color-expert",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
-    "workflow": "node scripts/workflow.mjs",
-    "check": "npm test && npm run test:mutations && node scripts/verify-distribution.mjs",
-    "interface": "node scripts/interface-review.mjs",
-    "test:mutations": "node scripts/check-mutations.mjs"
+    "check": "node tools/verify-distribution.mjs && node tools/smoke-check.mjs",
+    "workflow": "node tools/workflow.mjs",
+    "interface": "node tools/interface-review.mjs"
   },
   "engines": {
     "node": ">=20"

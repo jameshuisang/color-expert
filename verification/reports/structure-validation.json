@@ -1,0 +1,15 @@
+{
+  "baseCommit": "292fef06c88c256f9716bdb2b421aa3053a69308",
+  "scope": "Local structure refactor; no creative-efficacy claim or public deployment",
+  "coreRegression": {
+    "passed": 117,
+    "failed": 0,
+    "skipped": 0
+  },
+  "targetedMutantsDetected": 11,
+  "installedSkillFiles": 83,
+  "installation": "Skills CLI1.9.0 local copy install + installed npm ci offline and integrity/smoke check passed; isolated-copy workflow starts with external private state",
+  "browserRegression": "Separate npm run test:browser; cloud sandbox blocks Chrome process launch. Not executed successfully in this refactor. Same SVG guard had an earlier independent real-Chrome pass before refactoring.",
+  "preserved": "Source URLs unchanged; four bundled third-party license texts byte-identical; existing data untouched",
+  "excluded": "Rejected README buttons, comparisons, private runs, feedback and captures"
+}

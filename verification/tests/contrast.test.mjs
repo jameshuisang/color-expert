@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';import {resolve,relative} from 'node:path';
+import {contrast,rgb,audit} from '../../skills/color-expert/tools/contrast.mjs';
+test('black / white is 21 and symmetric',()=>{assert.equal(contrast('#000','#fff'),21);assert.equal(contrast('#fff','#000'),21)});
+test('identical colors are 1',()=>assert.equal(contrast('#abc','#abc'),1));
+test('known gray fails normal text but passes large text',()=>{let v=contrast('#777','#fff');assert.ok(v>4.47&&v<4.49);assert.equal(audit({pairs:[{name:'body',foreground:'#777',background:'#fff',minimum:4.5}]})[0].pass,false)});
+test('short and long hex agree',()=>assert.deepEqual(rgb('#abc'),rgb('#aabbcc')));
+test('invalid or unsupported formats rejected',()=>{for(const x of ['#0008','red','oklch(0.5 0.2 20)','#gggggg',null,123])assert.throws(()=>rgb(x))});
+test('invalid schemas rejected',()=>{for(const d of [{},{pairs:[]},{pairs:[{name:'x',foreground:'#000',background:'#fff',minimum:'4.5'}]},{pairs:[{name:'',minimum:4.5}]}])assert.throws(()=>audit(d))});
+test('passing synthetic example',()=>{const d=JSON.parse(readFileSync(new URL('../../skills/color-expert/templates/palette.json',import.meta.url)));assert.ok(audit(d).every(r=>r.pass))});
+test('index IDs, routes and confined reference files',()=>{const root=resolve(new URL('../../skills/color-expert/',import.meta.url).pathname);const index=JSON.parse(readFileSync(new URL('../../skills/color-expert/knowledge/index.json',import.meta.url)));const ids=new Set();for(const s of index.sources){assert.ok(!ids.has(s.id));ids.add(s.id);const path=resolve(root,s.path);assert.ok(!relative(root,path).startsWith('..'));assert.ok(existsSync(path));assert.ok(readFileSync(path,'utf8').trim())}for(const route of Object.values(index.routes))for(const id of route)assert.ok(ids.has(id))});

@@ -1,0 +1,377 @@
+{
+  "version": 2,
+  "routes": {
+    "ui-palette": [
+      "ui-guidance",
+      "wcag-text",
+      "use-of-color"
+    ],
+    "contrast-audit": [
+      "wcag-text"
+    ],
+    "color-model": [
+      "color-science-foundations",
+      "color-models",
+      "appearance-models",
+      "color-nerd",
+      "color-fidget-lessons"
+    ],
+    "inspiration": [
+      "inspiration-policy"
+    ],
+    "expressive-palette": [
+      "convictions",
+      "color-fidget-lessons",
+      "albers-context",
+      "dow-composition",
+      "pair-research",
+      "meaning-depth-method"
+    ],
+    "fundamentals": [
+      "convictions",
+      "color-fidget-lessons",
+      "albers-context",
+      "dow-composition",
+      "pair-research"
+    ],
+    "physical-palette": [
+      "convictions",
+      "color-fidget-lessons",
+      "golden-mixing"
+    ],
+    "hue-plane": [
+      "hue-planes",
+      "color-models",
+      "character-harmony"
+    ],
+    "data-ramp": [
+      "data-ramps",
+      "edge-colors",
+      "wcag-text",
+      "use-of-color"
+    ],
+    "palette-exploration": [
+      "convictions",
+      "confident-color",
+      "character-harmony"
+    ],
+    "web-color-management": [
+      "web-spaces",
+      "wcag-text",
+      "monitor-management"
+    ],
+    "monitor-color": [
+      "monitor-management",
+      "web-spaces"
+    ],
+    "blender-color": [
+      "blender-color",
+      "web-spaces",
+      "monitor-management"
+    ],
+    "light-shadow": [
+      "light-shadow",
+      "blender-color",
+      "web-spaces"
+    ],
+    "color-meaning": [
+      "color-meaning-evidence",
+      "meaning-depth-method",
+      "convictions"
+    ],
+    "illustration-depth": [
+      "meaning-depth-method",
+      "depth-attention-evidence",
+      "light-shadow"
+    ],
+    "data-communication": [
+      "data-communication",
+      "data-ramps",
+      "wcag-text",
+      "use-of-color"
+    ],
+    "color-decision": [
+      "color-decision"
+    ],
+    "dimensional-light-color": [
+      "dimensional-light-color",
+      "light-shadow",
+      "blender-color",
+      "web-spaces"
+    ],
+    "color-science-foundations": [
+      "color-science-foundations"
+    ],
+    "pair-judgement": [
+      "pair-research-detail",
+      "pair-judgement-method"
+    ],
+    "source-status": [
+      "source-coverage"
+    ],
+    "cross-media-appearance": [
+      "cross-media-appearance",
+      "appearance-models",
+      "monitor-management"
+    ],
+    "photo-video-grading": [
+      "photo-video-grading",
+      "monitor-management"
+    ],
+    "print-proofing": [
+      "cross-media-appearance",
+      "monitor-management"
+    ]
+  },
+  "sources": [
+    {
+      "id": "wcag-text",
+      "path": "knowledge/references/contrast.md",
+      "kind": "standard-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "id": "color-models",
+      "path": "knowledge/references/models.md",
+      "kind": "technical-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.w3.org/TR/css-color-4/"
+    },
+    {
+      "id": "ui-guidance",
+      "path": "knowledge/references/ui.md",
+      "kind": "project-method",
+      "reviewed": "2026-11-14",
+      "url": null
+    },
+    {
+      "id": "inspiration-policy",
+      "path": "knowledge/references/inspiration.md",
+      "kind": "project-method",
+      "reviewed": "2026-11-14",
+      "url": null
+    },
+    {
+      "id": "color-nerd",
+      "path": "knowledge/references/color-nerd.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.thegraymuse.com/en-ca/pages/color-fidget",
+      "coverage": "Selected written interview/product materials and one walkthrough transcript; six additional lesson transcripts indexed separately"
+    },
+    {
+      "id": "appearance-models",
+      "path": "knowledge/references/appearance-models.md",
+      "kind": "standards-publisher-summary",
+      "reviewed": "2026-11-14",
+      "url": "https://cie.co.at/publications/colour-appearance-model-colour-management-systems-ciecam02"
+    },
+    {
+      "id": "cyfuko",
+      "path": "knowledge/references/cyfuko.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.youtube.com/watch?v=f5BK66Bjup0",
+      "coverage": "Complete available video transcript; no visual review"
+    },
+    {
+      "id": "color-fidget-lessons",
+      "path": "knowledge/references/color-fidget-lessons.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.thegraymuse.com/en-ca/pages/color-fidget",
+      "coverage": "Six complete available lesson transcripts read; no visual review"
+    },
+    {
+      "id": "convictions",
+      "path": "knowledge/convictions.md",
+      "kind": "project-synthesis",
+      "url": null,
+      "reviewed": "2026-11-14"
+    },
+    {
+      "id": "albers-context",
+      "path": "knowledge/references/albers-context.md",
+      "kind": "primary-source-notes",
+      "url": "https://www.albersfoundation.org/alberses/teaching/interaction-of-color",
+      "reviewed": "2026-11-14"
+    },
+    {
+      "id": "dow-composition",
+      "path": "knowledge/references/dow-composition.md",
+      "kind": "primary-source-notes",
+      "url": "https://www.gutenberg.org/files/45410/45410-h/45410-h.htm",
+      "reviewed": "2026-11-14"
+    },
+    {
+      "id": "pair-research",
+      "path": "knowledge/references/pair-research.md",
+      "kind": "primary-source-notes",
+      "url": "https://link.springer.com/article/10.3758/s13414-010-0027-0",
+      "reviewed": "2026-11-16",
+      "coverage": "Main text methods/results/discussion and appendix inspected; relevant supplement text/captions checked; no raw-data reanalysis."
+    },
+    {
+      "id": "golden-mixing",
+      "path": "knowledge/references/golden-mixing.md",
+      "kind": "primary-source-notes",
+      "url": "https://goldenartistcolors.com/inspiration/digital-color-wheel",
+      "reviewed": "2026-11-14"
+    },
+    {
+      "id": "use-of-color",
+      "path": "knowledge/references/use-of-color.md",
+      "kind": "primary-source-notes",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "reviewed": "2026-11-14"
+    },
+    {
+      "id": "character-harmony",
+      "path": "knowledge/references/character-harmony.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.youtube.com/watch?v=lXDCQjeM8Hk"
+    },
+    {
+      "id": "hue-planes",
+      "path": "knowledge/references/hue-planes.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.youtube.com/watch?v=Gd1qsQgsE5w"
+    },
+    {
+      "id": "confident-color",
+      "path": "knowledge/references/confident-color.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.youtube.com/watch?v=Flkao2Xa7OI"
+    },
+    {
+      "id": "edge-colors",
+      "path": "knowledge/references/edge-colors.md",
+      "kind": "creator-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://www.youtube.com/watch?v=qiXHiABcl-I"
+    },
+    {
+      "id": "data-ramps",
+      "path": "knowledge/references/data-ramps.md",
+      "kind": "technical-guidance",
+      "reviewed": "2026-11-14",
+      "url": "https://matplotlib.org/stable/users/explain/colors/colormaps.html"
+    },
+    {
+      "id": "web-spaces",
+      "path": "knowledge/references/web-spaces.md",
+      "kind": "primary-source-synthesis",
+      "reviewed": "2026-11-14",
+      "url": "https://www.w3.org/TR/css-color-4/"
+    },
+    {
+      "id": "monitor-management",
+      "path": "knowledge/references/monitor-management.md",
+      "kind": "primary-source-synthesis",
+      "reviewed": "2026-11-14",
+      "url": "https://www.color.org/displaycalibration/"
+    },
+    {
+      "id": "blender-color",
+      "path": "knowledge/references/blender-color.md",
+      "kind": "primary-source-synthesis",
+      "reviewed": "2026-11-14",
+      "url": "https://docs.blender.org/manual/en/5.0/render/color_management/color_spaces.html"
+    },
+    {
+      "id": "light-shadow",
+      "path": "knowledge/references/light-shadow.md",
+      "kind": "primary-source-grounded conditional operating guide",
+      "reviewed": "2026-11-14",
+      "url": "https://pbr-book.org/4ed/Light_Transport_I_Surface_Reflection/The_Light_Transport_Equation"
+    },
+    {
+      "id": "color-meaning-evidence",
+      "path": "knowledge/references/color-meaning-evidence.md",
+      "kind": "empirical-study-and-systematic-review-notes",
+      "reviewed": "2026-11-14",
+      "url": "https://journals.sagepub.com/eprint/5G3HXWNGZTT6ZXFIHTDP/full"
+    },
+    {
+      "id": "meaning-depth-method",
+      "path": "knowledge/references/meaning-depth-method.md",
+      "kind": "conditional-project-synthesis",
+      "reviewed": "2026-11-14",
+      "url": null
+    },
+    {
+      "id": "depth-attention-evidence",
+      "path": "knowledge/references/depth-attention-evidence.md",
+      "kind": "primary-research-notes-with-coverage-limits",
+      "reviewed": "2026-11-14",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929495/"
+    },
+    {
+      "id": "data-communication",
+      "path": "knowledge/references/data-communication.md",
+      "kind": "primary-source-grounded-project-synthesis",
+      "reviewed": "2026-11-15",
+      "url": "https://colorbrewer2.org/learnmore/schemes_full.html"
+    },
+    {
+      "id": "color-decision",
+      "path": "knowledge/references/color-decision.md",
+      "kind": "conditional-project-method-and-testable-hypotheses",
+      "reviewed": "2026-11-15",
+      "url": null
+    },
+    {
+      "id": "dimensional-light-color",
+      "path": "knowledge/references/dimensional-light-color.md",
+      "kind": "primary-source-grounded-project-method",
+      "reviewed": "2026-11-15",
+      "url": "https://pbr-book.org/4ed/Light_Transport_I_Surface_Reflection/The_Light_Transport_Equation",
+      "coverage": "Selected PBRT 4ed transport, reflection, color, point/area light and volume pages read; analytic diagnostics tested; visual scene suite not run."
+    },
+    {
+      "id": "color-science-foundations",
+      "path": "knowledge/references/color-science-foundations.md",
+      "kind": "primary-source-synthesis-and-project-method",
+      "reviewed": "2026-11-16",
+      "url": "https://cie.co.at/eilvterm/17-23-041",
+      "coverage": "CIE public definitions/CIECAM16 publisher summary, Oklab derivation, selected W3C and PBRT pages; not a full CIE report or implementation."
+    },
+    {
+      "id": "pair-judgement-method",
+      "path": "guides/pair-judgement-method.md",
+      "kind": "project-method-and-unrun-diagnostic-proposal",
+      "reviewed": "2026-11-16",
+      "url": null
+    },
+    {
+      "id": "pair-research-detail",
+      "path": "knowledge/references/pair-research-detail.md",
+      "kind": "primary-study-methods-results-and-qualified-synthesis",
+      "reviewed": "2026-11-16",
+      "url": "https://link.springer.com/article/10.3758/s13414-010-0027-0"
+    },
+    {
+      "id": "source-coverage",
+      "path": "knowledge/source-coverage.json",
+      "kind": "candidate-source-inventory",
+      "reviewed": "2026-11-16",
+      "url": null
+    },
+    {
+      "id": "cross-media-appearance",
+      "path": "knowledge/references/cross-media-appearance.md",
+      "type": "project-synthesis",
+      "coverage": "Primary source sections read; no physical/media execution"
+    },
+    {
+      "id": "photo-video-grading",
+      "path": "knowledge/references/photo-video-grading.md",
+      "type": "project-synthesis",
+      "coverage": "ACES input/output/metadata and Adobe Camera Raw source sections read; no grading execution"
+    }
+  ]
+}

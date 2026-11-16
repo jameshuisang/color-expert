@@ -1,5 +1,3 @@
-# Project guidance
+# Skill guidance
 
-For color tasks read `SKILL.md`. Retrieve scoped sources, not the whole folder. Follow independent rendered review in `docs/runtime.md`; code-only analysis cannot approve aesthetics. Run `npm test` after changes. Keep user assets, outputs and feedback private. Do not publish this candidate or infer a license grant; read `RELEASE-NOTES.md`.
-
-For test changes follow `docs/test-oracles.md`: independent expected values, meaningful failing controls, boundary/asymmetric cases and fault injection where feasible. Distinguish integrity from efficacy; do not use implementation output as its own oracle.
+For color tasks read `SKILL.md`. Retrieve scoped knowledge; do not load the whole library. Keep measured, visually reviewed and unverified outcomes separate. Use the host's approval rules and keep private artifacts outside this directory. `npm run check` verifies the installed package; repository development tests are separate.

@@ -1,5 +1,0 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {inspectRamp} from '../scripts/ramp.mjs';
-const ramp=(colors,direction='increasing',type='sequential')=>inspectRamp({colors,direction,type});
-test('sequential order in either direction and known endpoints',()=>{const r=ramp(['#000','#777','#fff']);assert.equal(r.strictlyOrdered,true);assert.equal(r.values[0],0);assert.equal(r.values[2],1);assert.equal(ramp(['#fff','#777','#000'],'decreasing').strictlyOrdered,true)});
-test('detects luminance reversals and plateaus without beauty claims',()=>{assert.deepEqual(ramp(['#000','#fff','#777']).reversals,[1]);assert.deepEqual(ramp(['#000','#000','#fff']).plateaus,[0]);assert.equal(ramp(['#000','#000','#fff']).strictlyOrdered,false)});
-test('rejects unsupported formats and semantics',()=>{for(const colors of [[],['#fff'],['#fff','transparent'],['#0008','#fff']])assert.throws(()=>ramp(colors));assert.throws(()=>ramp(['#000','#fff'],'increasing','diverging'));assert.throws(()=>ramp(['#000','#fff'],'auto'));});

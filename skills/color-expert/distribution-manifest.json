@@ -8,7 +8,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "9b1cece4722bd0165f46cac827da4429174ec6e58530278526aa5be5c0305916"
+      "sha256": "82a9a5964b60cb88eeeba2fa05b85c4504c4cba5d5261bab0ef83dac604565f8"
     },
     {
       "path": "LICENSE",
@@ -16,439 +16,319 @@
     },
     {
       "path": "README.md",
-      "sha256": "f7633f69c768696b4f4d4194ae0a85f23f84c71acd48fc52e556cd8dc81b72a5"
-    },
-    {
-      "path": "RELEASE-NOTES.md",
-      "sha256": "71ad4542654a9a5cb6ac9e3c40a9ddf40352d3ad167c43c652dd1ce607a28d1a"
+      "sha256": "6369759bcbf64e4f74b42174df2fbb049e463bc3a3abfd12b92539f452a51e0f"
     },
     {
       "path": "SKILL.md",
-      "sha256": "15518e7ed0aeeb06d1f43c66aa84423f2334fecda8f47bf7b6a7bd92f03a55b0"
+      "sha256": "9befe40e0d79903d298d16f19f567072449051235149115d7098c75418354f68"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
-      "sha256": "077a0ecbae6346e9efd814a28fd9e0ba0751fc1aeaed30d74c58d5722bf1d3a8"
+      "sha256": "46d50700d2ff8074cf47ae22f173c2279f783d3f679108c2184eb6169ed244aa"
     },
     {
-      "path": "VALIDATION.json",
-      "sha256": "afe48564e7388186d24dff95a4e458038fbd2164dbc41bb79440ad874c0b97b2"
+      "path": "guides/domain-contracts.md",
+      "sha256": "0c5281053b183ce3e59f0ec271f990feb22a6a0541e37ce67b645c81678004a1"
     },
     {
-      "path": "color/convictions.md",
-      "sha256": "c78887edd66837f72cdb8949da2f23f20d97afcd8d1bcc8c36ae8f0bc1c69a0c"
+      "path": "guides/getting-started.md",
+      "sha256": "2f653a0be67026dec80a614d55ab7ec06129d620055638147e1c68521c1c447a"
     },
     {
-      "path": "color/index.json",
-      "sha256": "74de347531af709e2ac1d7311c4f650ef5a76cabef40564a7edb0e087487c351"
+      "path": "guides/interface-review.md",
+      "sha256": "7a00dd9ba146b2162fb12435ff9778d4b5d33aac58364c62293c5f3dd44d0e91"
     },
     {
-      "path": "color/principles.json",
-      "sha256": "6cac4931f735c4f3e8e016f651e1e3a75736873ee43524c054eb67e66d0177c1"
+      "path": "guides/media-workflows.md",
+      "sha256": "54c7e464a266c2b95304b1f5859250866aad9a2d061c0d107bbcdc466b2d1e77"
     },
     {
-      "path": "color/references/albers-context.md",
-      "sha256": "14fbc98238fe282f77bedfba90e172fea500e499f58ab47a788ef826384c7631"
+      "path": "guides/pair-judgement-method.md",
+      "sha256": "7a3b2b28416ab9e4e73418e6069061f4d36f36bd211c9f90907bb6dff4414351"
     },
     {
-      "path": "color/references/appearance-models.md",
-      "sha256": "f8bcc50fd398713524e6eb80e425e7ee82de98df4cb37c17f354ddd5b504166d"
+      "path": "guides/palette-study.md",
+      "sha256": "5a79e7e5da8d707c3826f98ccaeff149e9733bc77eb11f3b29efee0c394ae0b3"
     },
     {
-      "path": "color/references/blender-color.md",
-      "sha256": "65214f6260e3e1b9becfb2716b452ae53c31bb55ba94d3d8470641295e573494"
+      "path": "guides/private-feedback.md",
+      "sha256": "146011ed4547afa99cb344000c4869d2baff5fe21ad156cc816a93c4e0ba0b64"
     },
     {
-      "path": "color/references/character-harmony.md",
-      "sha256": "829f1328cb12715dcdb42431c932dbde5155ec45345a6e8ff0e1d5d59a5dfb1b"
-    },
-    {
-      "path": "color/references/color-decision.md",
-      "sha256": "18868f874012e0944d603a34c1dfb1b2409d9b4bfd518f38118f55ae3dbdc8c5"
-    },
-    {
-      "path": "color/references/color-fidget-lessons.md",
-      "sha256": "eb897b71fe08006aaffe8260478dd1f9d07b6e49999cff995222fdfbdc8f8839"
-    },
-    {
-      "path": "color/references/color-meaning-evidence.md",
-      "sha256": "ebe33cf18b2273d2e5708854a4bbaa2bc884c739d89ab98e1b0aff59ba5b8bf1"
-    },
-    {
-      "path": "color/references/color-nerd.md",
-      "sha256": "71f54032735b223f1bb72fd52417509c45f4dbb75871f009ba25c6b8febb6d76"
-    },
-    {
-      "path": "color/references/color-science-foundations.md",
-      "sha256": "6ac5ad09500e0116370a9c3b3548b2a9f7a2c1cb597fdc8694d1d7664f2a82eb"
-    },
-    {
-      "path": "color/references/confident-color.md",
-      "sha256": "d769298e7548fad2e139d05c47eaeb799deb770bb6339483c4b695dc406e7a3b"
-    },
-    {
-      "path": "color/references/contrast.md",
-      "sha256": "17e141f3b708cf283dceefe03709a56ecd29f2286bf2ba10e1c2e5652071a7c3"
-    },
-    {
-      "path": "color/references/cross-media-appearance.md",
-      "sha256": "a0f91edd12a050bad9aa5e90b7e36fe781a30332fa46528418d56325d215d9fd"
-    },
-    {
-      "path": "color/references/cyfuko.md",
-      "sha256": "880a1d7d2938d1131bd7421ba0f2014ca71f26c722fb0ea514ce2fa43f25e4fc"
-    },
-    {
-      "path": "color/references/data-communication.md",
-      "sha256": "f0502d2d832798f354cb36695ef2207fabac9e7aa85638464dece42b3da4488d"
-    },
-    {
-      "path": "color/references/data-ramps.md",
-      "sha256": "24e505bf3eb9383739c988b12a4ebe255fa532973b3fd94f8474026a34dd5e74"
-    },
-    {
-      "path": "color/references/depth-attention-evidence.md",
-      "sha256": "9febd30ff58ac50ef9af5d5f52d9e8e6590a0a360edb0007bb98978e7195d455"
-    },
-    {
-      "path": "color/references/dimensional-light-color.md",
-      "sha256": "994dd8d2241b76bba694fd18a60cf8e1854fbf0944e3b37b633b25a3dca84b71"
-    },
-    {
-      "path": "color/references/dow-composition.md",
-      "sha256": "8e7c5afeb85fed82d6eff9942234cb9f5b6eddc962478ae42d145ec5af4f5c74"
-    },
-    {
-      "path": "color/references/edge-colors.md",
-      "sha256": "dbbb9902391c4d4c2b9a9b50d9928c770fdf11115c211e549feed325b98babd0"
-    },
-    {
-      "path": "color/references/golden-mixing.md",
-      "sha256": "264e72b754965c9bb52060b00a8a8ac48a38a5bfd0fb96cb4ad49e59842eb95e"
-    },
-    {
-      "path": "color/references/hue-planes.md",
-      "sha256": "a83185f3af14c43f8fcc83d51ab6345bca80f6d00e507b113dbf11766456b3ec"
-    },
-    {
-      "path": "color/references/inspiration.md",
-      "sha256": "cb5c35539e6b81658a2740e5b4b697b3c79592c22b1977779f67d5cf636fc9e0"
-    },
-    {
-      "path": "color/references/light-shadow.md",
-      "sha256": "3d8db9a6c82d37e62d8353a5b8bf968e12646f70e554312b730c2df6128cf258"
-    },
-    {
-      "path": "color/references/meaning-depth-method.md",
-      "sha256": "ae68fba0fc18d35c7a7c387b736390d32e820024cf66d0442c1ce00677f41318"
-    },
-    {
-      "path": "color/references/models.md",
-      "sha256": "5e2ea66445fee9829addc6f2a9db121871f12ecf55a20ad346d49af9fa510237"
-    },
-    {
-      "path": "color/references/monitor-management.md",
-      "sha256": "eef3277436c798e8370f78f6caf580540952d4124769e2a1bf73fa856533a763"
-    },
-    {
-      "path": "color/references/pair-research-detail.md",
-      "sha256": "d574f4398bb68464213e9ba49cc82a73696c334c755938b3c675b4cfff126560"
-    },
-    {
-      "path": "color/references/pair-research.md",
-      "sha256": "0191822f1a5f048d941db290259196c8cb34a37350d2dfb11a28961743cfa8e1"
-    },
-    {
-      "path": "color/references/photo-video-grading.md",
-      "sha256": "ae6586d8ce14f3f25bf8d5d1fedb6b13e97949b2408b88c48cf3b8da659c6505"
-    },
-    {
-      "path": "color/references/ui.md",
-      "sha256": "d518ab4b39b35f7c98c289d4727ee5e736bac9798121a38d7b7bdd2931326622"
-    },
-    {
-      "path": "color/references/use-of-color.md",
-      "sha256": "172cafe4755aa58399fe4da1e1da8f61cd9142ebf2fd6690b81b156c4432cc55"
-    },
-    {
-      "path": "color/references/web-spaces.md",
-      "sha256": "0e0e096db0966e54ce92ce57cfe835963618589f6468d1efe25fb2f04d1ab45e"
-    },
-    {
-      "path": "color/source-coverage.json",
-      "sha256": "224deed3c94f443e21d6d4778cbbbb1f029c9f5523cb24eb2e79ec233bbcc488"
-    },
-    {
-      "path": "docs/actual-interface-review.md",
-      "sha256": "819c8280981639d6dc37249d22320bf02540b47ebb4e55d3ca3438040ab5c1e5"
-    },
-    {
-      "path": "docs/actual-interface-verification.md",
-      "sha256": "8702d1af9cdb43bc85b4cace43283eaa19aa37e45dd209c4ddeeb17293e27ecc"
-    },
-    {
-      "path": "docs/domain-contracts.md",
-      "sha256": "9519178120bf974c58bfebd6ed4d4ff4d0ca2aebbdf6c2ed713bbf54ea30ec9f"
-    },
-    {
-      "path": "docs/install-verification.md",
-      "sha256": "d43090d1349dea3d705af2662ebb0591af27c5e2a66d7508554b1dc89a2814e4"
-    },
-    {
-      "path": "docs/learning.md",
-      "sha256": "bb43779afc213205936e45dcc8d794ae15f67780429ebc33859c0a9e4dbcb45f"
-    },
-    {
-      "path": "docs/licenses/apca-w3-0.1.9.md",
-      "sha256": "45822a7b8120d9792a1233b602839b66184beca222d0771672d773eafe26a438"
-    },
-    {
-      "path": "docs/licenses/colorparsley-0.1.8.md",
-      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
-    },
-    {
-      "path": "docs/licenses/ottosson-2020-MIT.txt",
-      "sha256": "3929a10fc5ae2932be781b4c076fb806b62ccab45a6991c0ebc151d06e8c5888"
-    },
-    {
-      "path": "docs/licenses/w3c-software-document-2023.txt",
-      "sha256": "45badb38a5d4cc4e3f73464b30e78f744840c9c6baed0d2a5a9a8d3dce2b7f3e"
-    },
-    {
-      "path": "docs/media-workflows.md",
-      "sha256": "8d7d0b8a95aaebd392f578eb041efc33fff5625b9e08c574d8f4b059e0dfcced"
-    },
-    {
-      "path": "docs/pair-judgement-method.md",
-      "sha256": "6ec8cfb1e5fab0bc13d90f18aa83e8561f5129796f6ef80c5517cecdec23dc9a"
-    },
-    {
-      "path": "docs/private-state-usage.md",
-      "sha256": "e3ec3e91c2b3c8561d706c86ce4da1b27db727ddf629481ec2b62d2ea4187fcd"
-    },
-    {
-      "path": "docs/private-v1-readiness.md",
-      "sha256": "b0e5208b6fa03d5ad10a1a6410df0a82e32fa7fadfcc05b0cb53834294852458"
-    },
-    {
-      "path": "docs/quickstart.md",
-      "sha256": "3af6b88ebca51abef0c669d620b3c1509e284eb86ddd334aac942133060c7130"
-    },
-    {
-      "path": "docs/runtime.md",
-      "sha256": "65d0f6d2124b4f8a42850bdc83c70d86498516dd05c1a2b7f4f4ec3a81b72705"
-    },
-    {
-      "path": "docs/semantic-decoding.md",
+      "path": "guides/semantic-decoding.md",
       "sha256": "cc514ce4a0c3a8b911d9b560d7e38d7a5a52d89b25a78a26dcbcc9840a64b84f"
     },
     {
-      "path": "docs/source-intake.md",
-      "sha256": "f4d73788366c918a0de242bc2fdc5e324eb9a7d260f978ea4b0bb033c84fc4a1"
-    },
-    {
-      "path": "docs/spelling-migration.md",
-      "sha256": "5afe295d197164a5c1b8e615d4115bd86eed206a06c6bd317333031b30e6782b"
-    },
-    {
-      "path": "docs/test-oracles.md",
-      "sha256": "1c34adee515049002d30de8c94873413c9daf8f99d00e24a6f8cc41c1e52e42f"
-    },
-    {
-      "path": "docs/visual-tool-discovery.md",
+      "path": "guides/visual-tool-discovery.md",
       "sha256": "66afa5e10df0a2963da1978ad698ce3dc327049bbe080eabc0f3f2024c295b71"
     },
     {
-      "path": "evals/contextual-harmony/pair-diagnostics.json",
-      "sha256": "0a08cd039e8385a2d2e154852b4c40c196e9d136794cbbb870256cbadb2950da"
+      "path": "knowledge/convictions.md",
+      "sha256": "95fd5c650495f0d65e33d8c906c2f3919a2793a9c3361bc1f724d9d3c453ba13"
     },
     {
-      "path": "evals/contextual-harmony/protocol.json",
-      "sha256": "2df74d3a206f5e67afc8a3f0a76bf1627276e49264b2aa46d054d777bcb46014"
+      "path": "knowledge/index.json",
+      "sha256": "8facedf1c6ad3ced0b5a9e96065fc04712d3e61d4f87eb4c7a61c2d5083e40a3"
     },
     {
-      "path": "evals/dimensional-light-color.json",
-      "sha256": "444f02fd5c0ceecb94687db36966a8f08da0ae1e7aef620d542ed70181794f0d"
+      "path": "knowledge/principles.json",
+      "sha256": "6cac4931f735c4f3e8e016f651e1e3a75736873ee43524c054eb67e66d0177c1"
     },
     {
-      "path": "evals/light-shadow.json",
-      "sha256": "82fc55668b924f4908961a469ef3841efe0fb28873f8e6b7f1decbaeff93a83d"
+      "path": "knowledge/references/albers-context.md",
+      "sha256": "14fbc98238fe282f77bedfba90e172fea500e499f58ab47a788ef826384c7631"
     },
     {
-      "path": "examples/demo-candidate.json",
-      "sha256": "6d1f3820fab689d1b634e1ed5e0b1273702862f4a79e0ff3e9e508f912528372"
+      "path": "knowledge/references/appearance-models.md",
+      "sha256": "f8bcc50fd398713524e6eb80e425e7ee82de98df4cb37c17f354ddd5b504166d"
     },
     {
-      "path": "examples/interface-contract.json",
-      "sha256": "02f10da2632b8897350bb10cc1a35e45803e0814977bcb2539187f09360bd293"
+      "path": "knowledge/references/blender-color.md",
+      "sha256": "65214f6260e3e1b9becfb2716b452ae53c31bb55ba94d3d8470641295e573494"
     },
     {
-      "path": "examples/interface-study.html",
-      "sha256": "f0abcb8605cc68d0bedb5442cfceaa815a4012d629ab96c8da8cb8f63771853a"
+      "path": "knowledge/references/character-harmony.md",
+      "sha256": "829f1328cb12715dcdb42431c932dbde5155ec45345a6e8ff0e1d5d59a5dfb1b"
     },
     {
-      "path": "examples/meaning-depth-study.html",
-      "sha256": "9872dabd72f79c81dfb4bdad102dda473d7eb380ffaf9f89bdf5fe1bfee93263"
+      "path": "knowledge/references/color-decision.md",
+      "sha256": "ba413de6d5d246c9547c746a85b23b98c160c948def6090128634778f3a853c8"
     },
     {
-      "path": "examples/media-brief.json",
-      "sha256": "da2767ab99ebc3557a597e88b97e1355c84859a8f2d62953cf7ac6c893e2cd4a"
+      "path": "knowledge/references/color-fidget-lessons.md",
+      "sha256": "eb897b71fe08006aaffe8260478dd1f9d07b6e49999cff995222fdfbdc8f8839"
     },
     {
-      "path": "examples/palette.json",
-      "sha256": "f3076fce122b6494304ac59f3ddeb4d1111070553104a15881d9f6389793d6e3"
+      "path": "knowledge/references/color-meaning-evidence.md",
+      "sha256": "ebe33cf18b2273d2e5708854a4bbaa2bc884c739d89ab98e1b0aff59ba5b8bf1"
     },
     {
-      "path": "examples/sequential-ramp.json",
-      "sha256": "9a112193eeb1a4993d7ad9240558ed02578b35d4ead8338fb1d4d6933a426b25"
+      "path": "knowledge/references/color-nerd.md",
+      "sha256": "71f54032735b223f1bb72fd52417509c45f4dbb75871f009ba25c6b8febb6d76"
     },
     {
-      "path": "examples/space-conversion.json",
-      "sha256": "b6600795748dcd6b6f28946fa7e7bebf3bfeff7205f3bafb7d5885f56634ef45"
+      "path": "knowledge/references/color-science-foundations.md",
+      "sha256": "6ac5ad09500e0116370a9c3b3548b2a9f7a2c1cb597fdc8694d1d7664f2a82eb"
     },
     {
-      "path": "examples/workflow-brief.json",
-      "sha256": "a5617df5117ce18081ffe4ad36618c7d831e31cb326dfd0341cfc57561b1d9d6"
+      "path": "knowledge/references/confident-color.md",
+      "sha256": "d769298e7548fad2e139d05c47eaeb799deb770bb6339483c4b695dc406e7a3b"
+    },
+    {
+      "path": "knowledge/references/contrast.md",
+      "sha256": "17e141f3b708cf283dceefe03709a56ecd29f2286bf2ba10e1c2e5652071a7c3"
+    },
+    {
+      "path": "knowledge/references/cross-media-appearance.md",
+      "sha256": "d811f69af416eea193158c3fa6c037204f3abb9100fbeb40a484650bdc5c7154"
+    },
+    {
+      "path": "knowledge/references/cyfuko.md",
+      "sha256": "880a1d7d2938d1131bd7421ba0f2014ca71f26c722fb0ea514ce2fa43f25e4fc"
+    },
+    {
+      "path": "knowledge/references/data-communication.md",
+      "sha256": "cd98e00fd48cc9ba5f9d8d94c086a7e08373811003f138271018a29df78f7ab9"
+    },
+    {
+      "path": "knowledge/references/data-ramps.md",
+      "sha256": "3b38e017587218a5a4e658f994960a1b5f1893d2cd04843d2ed89d1a693cc508"
+    },
+    {
+      "path": "knowledge/references/depth-attention-evidence.md",
+      "sha256": "9febd30ff58ac50ef9af5d5f52d9e8e6590a0a360edb0007bb98978e7195d455"
+    },
+    {
+      "path": "knowledge/references/dimensional-light-color.md",
+      "sha256": "8fbd9e5612cc9c2adb9ab08b07b249ad356686061148ce5661014b9752cb07d3"
+    },
+    {
+      "path": "knowledge/references/dow-composition.md",
+      "sha256": "8e7c5afeb85fed82d6eff9942234cb9f5b6eddc962478ae42d145ec5af4f5c74"
+    },
+    {
+      "path": "knowledge/references/edge-colors.md",
+      "sha256": "dbbb9902391c4d4c2b9a9b50d9928c770fdf11115c211e549feed325b98babd0"
+    },
+    {
+      "path": "knowledge/references/golden-mixing.md",
+      "sha256": "264e72b754965c9bb52060b00a8a8ac48a38a5bfd0fb96cb4ad49e59842eb95e"
+    },
+    {
+      "path": "knowledge/references/hue-planes.md",
+      "sha256": "a83185f3af14c43f8fcc83d51ab6345bca80f6d00e507b113dbf11766456b3ec"
+    },
+    {
+      "path": "knowledge/references/inspiration.md",
+      "sha256": "cb5c35539e6b81658a2740e5b4b697b3c79592c22b1977779f67d5cf636fc9e0"
+    },
+    {
+      "path": "knowledge/references/light-shadow.md",
+      "sha256": "d03a127e84ff06a98ca86aca87ab3d91b8ec6da81901a17291ea8128327e5cfd"
+    },
+    {
+      "path": "knowledge/references/meaning-depth-method.md",
+      "sha256": "7e7418867c1df4ae498fa4bdebf7f85c45b7375378725b21bb3595dcad3ff36f"
+    },
+    {
+      "path": "knowledge/references/models.md",
+      "sha256": "5e2ea66445fee9829addc6f2a9db121871f12ecf55a20ad346d49af9fa510237"
+    },
+    {
+      "path": "knowledge/references/monitor-management.md",
+      "sha256": "eef3277436c798e8370f78f6caf580540952d4124769e2a1bf73fa856533a763"
+    },
+    {
+      "path": "knowledge/references/pair-research-detail.md",
+      "sha256": "2417099ffd7f34817e4a3c59749b6f26ac67272f464dd48c7b86c9bc7b3ae204"
+    },
+    {
+      "path": "knowledge/references/pair-research.md",
+      "sha256": "0191822f1a5f048d941db290259196c8cb34a37350d2dfb11a28961743cfa8e1"
+    },
+    {
+      "path": "knowledge/references/photo-video-grading.md",
+      "sha256": "627111d19ed1e8d7e2432f5c24e5a1c2ad85320b24a9dad42f74e9e888fb482d"
+    },
+    {
+      "path": "knowledge/references/ui.md",
+      "sha256": "d518ab4b39b35f7c98c289d4727ee5e736bac9798121a38d7b7bdd2931326622"
+    },
+    {
+      "path": "knowledge/references/use-of-color.md",
+      "sha256": "172cafe4755aa58399fe4da1e1da8f61cd9142ebf2fd6690b81b156c4432cc55"
+    },
+    {
+      "path": "knowledge/references/web-spaces.md",
+      "sha256": "0e0e096db0966e54ce92ce57cfe835963618589f6468d1efe25fb2f04d1ab45e"
+    },
+    {
+      "path": "knowledge/source-coverage.json",
+      "sha256": "9b925c2361464eed752d86bca1f0a06da5f7f7427a550321b75190ed7457688b"
+    },
+    {
+      "path": "licenses/apca-w3-0.1.9.md",
+      "sha256": "45822a7b8120d9792a1233b602839b66184beca222d0771672d773eafe26a438"
+    },
+    {
+      "path": "licenses/colorparsley-0.1.8.md",
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "path": "licenses/ottosson-2020-MIT.txt",
+      "sha256": "3929a10fc5ae2932be781b4c076fb806b62ccab45a6991c0ebc151d06e8c5888"
+    },
+    {
+      "path": "licenses/w3c-software-document-2023.txt",
+      "sha256": "45badb38a5d4cc4e3f73464b30e78f744840c9c6baed0d2a5a9a8d3dce2b7f3e"
     },
     {
       "path": "package-lock.json",
-      "sha256": "71bf83d4cdadc71947e32640aa717bb5f5458b16d4ec739ea99e964a05a59fb1"
+      "sha256": "1f189e8048be2c328ef87a1cab51e89d096183fb640bf0dd7473c76df45481b5"
     },
     {
       "path": "package.json",
-      "sha256": "4d345f537fdeece670b2346b82c9b533a5c09716e7032d5a855897699a6a1e73"
+      "sha256": "9e8939b1cec8670da7531c72fe53a66f56ec4da659cb8958c54aec296345bb8e"
     },
     {
-      "path": "scripts/check-mutations.mjs",
-      "sha256": "4f1e2980e1b69d3eee7345904a89ad75865b044c17cdece5d13ba576da0b4313"
+      "path": "templates/demo-candidate.json",
+      "sha256": "6d1f3820fab689d1b634e1ed5e0b1273702862f4a79e0ff3e9e508f912528372"
     },
     {
-      "path": "scripts/contrast.mjs",
-      "sha256": "b787181ce8aff6ecf39f64bbe9730732f83723f6d56c49f9eb546f7b49264fdb"
+      "path": "templates/interface-contract.json",
+      "sha256": "02f10da2632b8897350bb10cc1a35e45803e0814977bcb2539187f09360bd293"
     },
     {
-      "path": "scripts/data-encoding.mjs",
+      "path": "templates/interface-study.html",
+      "sha256": "f0abcb8605cc68d0bedb5442cfceaa815a4012d629ab96c8da8cb8f63771853a"
+    },
+    {
+      "path": "templates/meaning-depth-study.html",
+      "sha256": "9872dabd72f79c81dfb4bdad102dda473d7eb380ffaf9f89bdf5fe1bfee93263"
+    },
+    {
+      "path": "templates/media-brief.json",
+      "sha256": "da2767ab99ebc3557a597e88b97e1355c84859a8f2d62953cf7ac6c893e2cd4a"
+    },
+    {
+      "path": "templates/palette.json",
+      "sha256": "f3076fce122b6494304ac59f3ddeb4d1111070553104a15881d9f6389793d6e3"
+    },
+    {
+      "path": "templates/sequential-ramp.json",
+      "sha256": "9a112193eeb1a4993d7ad9240558ed02578b35d4ead8338fb1d4d6933a426b25"
+    },
+    {
+      "path": "templates/space-conversion.json",
+      "sha256": "b6600795748dcd6b6f28946fa7e7bebf3bfeff7205f3bafb7d5885f56634ef45"
+    },
+    {
+      "path": "templates/workflow-brief.json",
+      "sha256": "a5617df5117ce18081ffe4ad36618c7d831e31cb326dfd0341cfc57561b1d9d6"
+    },
+    {
+      "path": "tools/contrast.mjs",
+      "sha256": "dd0cf12d10e0e482318ac5556095b38a51beb75fa54bf62a1aecd4fb4f18baa7"
+    },
+    {
+      "path": "tools/data-encoding.mjs",
       "sha256": "6cbce78a2e6f249aff3e985b016d8099da91069cbecee056b40d9a3a2520985a"
     },
     {
-      "path": "scripts/interface-browser-collector.js",
-      "sha256": "862ec8a0c3ab0d8cf9011c815d9c2b8a2313cf71b2497bc260600d10a6ec9ab6"
+      "path": "tools/interface-browser-collector.js",
+      "sha256": "81fa72ab2c4e1302b2ed9146574194e729674aedce3bbdc77906f95423cb8ca1"
     },
     {
-      "path": "scripts/interface-review.mjs",
+      "path": "tools/interface-review.mjs",
       "sha256": "f664f5b979d1cc9302a7f496cc9a85f40955820892dafe81fa53cd3263f4ddf9"
     },
     {
-      "path": "scripts/learning.mjs",
+      "path": "tools/learning.mjs",
       "sha256": "461e548ae075d327318c94c3fc32e7f882b3e1e1bd600c8cec61e18153849deb"
     },
     {
-      "path": "scripts/light-transport-diagnostics.mjs",
+      "path": "tools/light-transport-diagnostics.mjs",
       "sha256": "021a6902b6846e864887cabe86e5816fdddef956415ab958a1f0d31b1110e26e"
     },
     {
-      "path": "scripts/media-preflight.mjs",
+      "path": "tools/media-preflight.mjs",
       "sha256": "bb01e4bc20dae71c3abb886930d4ed0aa6653c22326d9ab0fff22f5a3a703873"
     },
     {
-      "path": "scripts/private-state.mjs",
+      "path": "tools/private-state.mjs",
       "sha256": "441aa4781f07ef11bd2d248ded6f198adc0aa339dad661e6185ce10dc34bc330"
     },
     {
-      "path": "scripts/ramp.mjs",
+      "path": "tools/ramp.mjs",
       "sha256": "62643554537fc52510507416a0aad5da0cabec2e0b721aee113184d8496085c9"
     },
     {
-      "path": "scripts/region-diagnostics.mjs",
-      "sha256": "693ad421a0376043e34004aaac35df4d33cd63f8075122bbb8cfb6a9d8107a5d"
+      "path": "tools/region-diagnostics.mjs",
+      "sha256": "f8ed1888dbb521d8861e2a602266c6d09497ba176501229f12d33ae4658ce643"
     },
     {
-      "path": "scripts/spaces.mjs",
-      "sha256": "23ebceb2af49c91df55648e71b7a6e80713c5188bd82a310ab39d88c511668cc"
+      "path": "tools/smoke-check.mjs",
+      "sha256": "057bafb59ca9f3124b24477ac4bdd063acb7cfc7802b7a8ea4288ae3f898c40f"
     },
     {
-      "path": "scripts/task-contract.mjs",
+      "path": "tools/spaces.mjs",
+      "sha256": "d905e691154232cfcaa8f5e4b37e18aa938df03233af00f7246e777eccbf9d99"
+    },
+    {
+      "path": "tools/task-contract.mjs",
       "sha256": "74d2547c03ebef6ebbe1275ac7300ddc8b408cd5c367482373ebc4d9c6b2ea86"
     },
     {
-      "path": "scripts/text-coverage.mjs",
-      "sha256": "6924522403f85076df280d516b6184437c07d474dd27bd581638cc8597b3bbcc"
+      "path": "tools/text-coverage.mjs",
+      "sha256": "8546e649a8387944fd36cc5707224dd74d2475251191b2c7447a8a1619015c80"
     },
     {
-      "path": "scripts/verify-distribution.mjs",
+      "path": "tools/verify-distribution.mjs",
       "sha256": "ea9ee6afa05dc668bcf4f2bec0e4a7ead0f511cfd0bb2c5622a64ccd2fb77290"
     },
     {
-      "path": "scripts/workflow.mjs",
-      "sha256": "5ad6d4e2d8f7108dd98cf75d6eb3bfa9d9aee504b9e1d0d5505a03dc73f9960e"
-    },
-    {
-      "path": "tests/collector-oracles.test.mjs",
-      "sha256": "570c55d2f0b8d519e1f871b55e00b123d6be2a7f8dc8dfafbfba47e29ae2fcdc"
-    },
-    {
-      "path": "tests/contrast.test.mjs",
-      "sha256": "5d3733946b10c4aa56d1422f84523827ade70ebb5de481ae0f5e794b5228e1c4"
-    },
-    {
-      "path": "tests/data-encoding.test.mjs",
-      "sha256": "ccd14d44f8bb3f9a076db0973074f0ee7e278ed3a4ebc9f04c45d48f9ad5df6c"
-    },
-    {
-      "path": "tests/distribution-check.test.mjs",
-      "sha256": "d45ae72a69fd969358f86480d70206920b6ac85fba61023786baee429e18fb47"
-    },
-    {
-      "path": "tests/distribution.test.mjs",
-      "sha256": "8279bcf06aed699e842d1031a962fef6f0169b07de5202a99e03740785290d33"
-    },
-    {
-      "path": "tests/independent-oracles.test.mjs",
-      "sha256": "acd36278aa305e77999e67ae98bc7a52d12d0cb84e15629e54df5dc7090c5f89"
-    },
-    {
-      "path": "tests/interface-review.test.mjs",
-      "sha256": "976f6d8a3fac3345f71a71588980e3185abe5486993157f03dd2afa19e54febf"
-    },
-    {
-      "path": "tests/learning-safety.test.mjs",
-      "sha256": "9375bfd7ba0221d37efe02b02453c234bd5d1687fdafadd2d9a810a362125121"
-    },
-    {
-      "path": "tests/learning.test.mjs",
-      "sha256": "d39d3e30a0e4dd833eefb3b4c92b09562a55522237a1b6c9bee6a7a9bc14aff0"
-    },
-    {
-      "path": "tests/light-transport-diagnostics.test.mjs",
-      "sha256": "224ba3d8b263d56d98c90c6bfc5cbcfe1a7b355db9daa6c67d1046e5044b89ae"
-    },
-    {
-      "path": "tests/media-preflight.test.mjs",
-      "sha256": "557b7920a1e8f9bd16da7ad81eb93a79d72cacdac1afe88c71de9db0cedaffd7"
-    },
-    {
-      "path": "tests/ramp.test.mjs",
-      "sha256": "94dfc3078588eb61c7e50a5839d9dc25294f699d6de60ad93318b3334183e77f"
-    },
-    {
-      "path": "tests/region-diagnostics.test.mjs",
-      "sha256": "13cb0e6a5833afd7434d75685fc4d5021225d408e369fa16b50276016f86ea82"
-    },
-    {
-      "path": "tests/spaces.test.mjs",
-      "sha256": "40107687a0a65fbf95c212e737a8f10454367aa3d7908d9d03ea06389d6f91d9"
-    },
-    {
-      "path": "tests/task-contract.test.mjs",
-      "sha256": "4159d1cdbadbd1a6e973f3a00efa85bfc24f8651ac1f4dd659004205803c7bbd"
-    },
-    {
-      "path": "tests/text-coverage.test.mjs",
-      "sha256": "7316ec7425d6bf26717d36e6fb8ece646da123066125f5bc827e45bd1779ee88"
-    },
-    {
-      "path": "tests/workflow.test.mjs",
-      "sha256": "f51a8de7c606aff5a3cd1af93a27dc3b1b4ffce60284f6f04916789ad7e9a15c"
+      "path": "tools/workflow.mjs",
+      "sha256": "8ae458053e22d74df7bba2ef6eab61732dfdd39ff1402f081a8102279f2c1163"
     }
   ]
 }
