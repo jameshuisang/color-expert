@@ -1,6 +1,62 @@
-# Color expert
+# Color Expert
 
-A color-design skill, source-indexed knowledge library and numerical/review toolkit. It helps an agent choose and assess color relationships for the context, medium and intended story. MIT applies to original project contributions; third-party notices retain their own terms.
+Help your agent choose and review colors for the story, audience, and medium, rather than apply the same palette everywhere.
+
+[Install](#install) · [Try it](#try-it) · [How it works](#how-it-works) · [Documentation](#documentation)
+
+## Install
+
+```sh
+npx skills add jameshuisang/color-expert --skill color-expert
+```
+
+Then describe your task to your agent. You do not need to choose individual knowledge modules or tools. If your host does not discover the skill automatically, ask it to use `color-expert` or read the installed `SKILL.md`.
+
+The skill provides instructions, indexed color knowledge, and numerical/review tools. Your agent host provides the model. Local scripts require **Node 20+ and npm**; visual acceptance also requires an authorized browser with rendered vision and a fresh separate reviewer. Installation does not supply those capabilities or a background service.
+
+<details>
+<summary>Install from a local copy and check the tools</summary>
+
+From your project, replace the placeholder below with the full path to the skill package directory containing `SKILL.md`. Choose your supported agent rather than copying `codex` blindly.
+
+```sh
+npx skills@1.9.0 add /absolute/path/to/skills/color-expert --skill color-expert --agent codex --copy --yes
+```
+
+Keep the complete skill folder, not just `SKILL.md`. No global installation is required. The GitHub command installs the published version, not unpublished local changes.
+
+From the installed skill folder:
+
+```sh
+npm ci --ignore-scripts --offline
+npm run check
+```
+
+There are no runtime npm dependencies. See [Using Color Expert](skills/color-expert/docs/quickstart.md) for the complete review sequence.
+
+</details>
+
+## Try it
+
+Ask for the outcome you need:
+
+- **Choose a palette:** “Choose colors for a neighborhood seed library. It should feel welcoming and practical, not like a luxury skincare brand. Show how the colors work on a seed packet and a website.”
+- **Review an interface:** “Review this dashboard's colors without changing its layout. Check hierarchy, status distinctions, and text contrast in the default and error states. Show what you measured and what remains unverified.”
+- **Adapt across media:** “This brand works on screen but feels different on uncoated packaging. Help diagnose the effects of paper, ink, lighting, and surrounding colors before proposing changes.”
+
+Provide the audience, medium, intended impression, and existing constraints. For image, video, print, or physical work, the agent needs appropriate host tools and actual output review; the bundled tools are not a grading application or physical renderer.
+
+## How it works
+
+1. **Frame the decision.** Identify the purpose, medium, audience, and readings to encourage or avoid.
+2. **Retrieve relevant guidance.** Load the applicable color references rather than the whole library.
+3. **Apply color in context.** Assign dominant, supporting, and focal roles; consider proportion, adjacency, and a meaningful alternative.
+4. **Check and review.** Run supported numerical checks and obtain fresh independent rendered review for creative evaluations. Missing evidence stays unverified.
+5. **Explain the recommendation.** Report assumptions, tradeoffs, sources, checks, and what still needs review.
+
+Numerical passes do not prove good taste, complete accessibility, physical color accuracy, or absence of bugs. Independent review is required by the workflow, but a submitted JSON flag alone cannot authenticate a reviewer.
+
+## Inside the skill
 
 ```text
 skills/color-expert/
@@ -12,41 +68,16 @@ skills/color-expert/
   tests/                Regression and independent-oracle checks
 ```
 
-## Installation
+`color/` informs color decisions. `docs/` explains how to operate and maintain the toolkit. `scripts/` runs supported checks; `tests/` checks scoped behavior, not creative superiority.
 
-Repository: [jameshuisang/color-expert](https://github.com/jameshuisang/color-expert). Once the skill files are available there:
+## Private project feedback
 
-```sh
-npx skills add jameshuisang/color-expert --skill color-expert
-```
+Optional persistence stores only authorized user feedback in an explicit **private directory outside the installed skill**. Keep user artifacts and review outputs there too. The public package is not a private data store, and installation is not consent to upload feedback. It does not automatically retrain a model or share learning across users. See [Private state](skills/color-expert/docs/private-state-usage.md) and [Learning](skills/color-expert/docs/learning.md) for setup, revocation, and rollback constraints.
 
-The published baseline was verified through a GitHub installation as well as local-path installation. The private-state remediation in this working copy has not yet been published or remote-installed; its verification is tracked separately.
+## Documentation
 
-### Local installation
+[Using Color Expert](skills/color-expert/docs/quickstart.md) · [Interface review](skills/color-expert/docs/actual-interface-review.md) · [Media workflows](skills/color-expert/docs/media-workflows.md) · [Test oracles](skills/color-expert/docs/test-oracles.md) · [Release notes](skills/color-expert/RELEASE-NOTES.md)
 
-From the project where you want to use it, run the Skills CLI against this package folder:
+## License
 
-```sh
-npx skills@1.9.0 add /absolute/path/to/color-expert-skill-package --skill color-expert --agent codex --copy --yes
-```
-
-The absolute path above is a placeholder for the folder you actually extracted. Choose your supported agent rather than copying `codex` blindly. No global installation is required. The GitHub command installs the published version, not unpublished changes in a local working copy.
-
-Then ask the agent: “Use color-expert to choose or review the colors for this brief.” Host discovery/automatic invocation differs; explicit fallback is to read the installed SKILL.md. The agent reads bundled assets relative to that file.
-
-From the installed skill folder, run `npm ci --ignore-scripts --offline` and `npm run check`. There are no runtime npm dependencies. The package does not provide a model, browser, separate reviewer or background service.
-
-Use an explicit private workspace path for interface review outputs. Do not share user artifacts or feedback with the source package. Static workflow and feedback storage require an explicit external private state directory; the installation is not a private data store or a hosted service. See the bundled runtime/quickstart documentation.
-
-## Verification
-
-Read the bundled RELEASE-NOTES.md and THIRD-PARTY-NOTICES.md. Targeted independent review covered installation, test oracles, source notices, concise creator attribution and known private-material exclusions. It is not exhaustive legal, privacy or security clearance. Current tests do not prove superior taste, universal accessibility or absence of bugs.
-
-
-## What the folders mean
-
-`color/` contains the expert's indexed domain knowledge and source notes: what to consider when making color decisions. `docs/` explains how to install, use, verify and maintain the toolkit, including its limitations. `scripts/` performs the supported checks; tests verify scoped behavior. These are complementary, not duplicate documentation folders.
-
-For optional persistence, follow the installed `docs/private-state-usage.md`. State is private and external to the skill; public installation is not consent to upload feedback.
-
-Start with [Using Color Expert](skills/color-expert/docs/quickstart.md).
+[MIT](LICENSE) applies to original project contributions. Third-party material retains its own terms; read [Third-party notices](skills/color-expert/THIRD-PARTY-NOTICES.md). Targeted review is not exhaustive legal, privacy, or security clearance.
